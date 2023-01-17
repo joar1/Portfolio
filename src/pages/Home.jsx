@@ -3,6 +3,7 @@ import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
 import About from './About';
 import BackgroundImage from '../images/bg1.jpg';
+import { Projects } from './Projects';
 
 export const Home = () => {
 	return (
@@ -25,6 +26,7 @@ export const Home = () => {
 					</p>
 				</StyledHeader>
 				<About />
+				{/* <Projects /> */}
 				<Footer />
 			</HomeContainer>
 		</div>

@@ -82,11 +82,11 @@ const AboutGrid = styled.div`
 	width: 82%;
 	margin: 0 auto;
 	padding: 1em;
+	text-align: left;
 	border: solid 2px red;
 	h3 {
 		grid-row: 1;
 		grid-column: 1;
-		padding: 1em;
 		border: solid 2px blue;
 	}
 	h4 {
