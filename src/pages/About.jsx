@@ -1,4 +1,8 @@
 import styled from 'styled-components';
+import { AiFillHtml5 } from 'react-icons/ai';
+import { DiCss3 } from 'react-icons/di';
+import { IoLogoJavascript } from 'react-icons/io';
+import { RiReactjsFill } from 'react-icons/ri';
 
 const About = () => {
 	return (
@@ -21,14 +25,26 @@ const About = () => {
 				</p>
 			</AboutSection>
 			<AboutGrid>
-				<h3>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
-					maiores nobis nemo blanditiis deleniti porro dignissimos, reiciendis
-					ipsam modi enim iusto, natus voluptatum necessitatibus obcaecati
-					omnis. Dolorem praesentium fugit adipisci.
-				</h3>
-				<h4>Mine erfaringer:</h4>
-				<p>HTML, CSS, Javascript, React</p>
+				<div>
+					<h3>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+						natus.
+					</h3>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
+						id necessitatibus consectetur eius atque, reiciendis provident
+						veniam quos deserunt numquam dolorum, minus placeat est itaque
+						quisquam, minima error alias assumenda?
+					</p>
+				</div>
+
+				<div>
+					<h4>Mine erfaringer:</h4>
+					<StyledIcons>
+						{' '}
+						<AiFillHtml5 /> <DiCss3 /> <IoLogoJavascript /> <RiReactjsFill />
+					</StyledIcons>
+				</div>
 			</AboutGrid>
 		</AboutContainer>
 	);
@@ -39,7 +55,8 @@ export default About;
 const AboutContainer = styled.div`
 	width: 100%;
 	margin: 0 auto;
-	background: grey;
+	background: #1b1d1e;
+	color: white;
 `;
 
 const AboutSection = styled.section`
@@ -50,7 +67,6 @@ const AboutSection = styled.section`
 	h2 {
 		text-align: center;
 		text-decoration: underline;
-		text-decoration-thickness: 0.2em;
 		text-underline-offset: 0.6em;
 		font-size: 3em;
 	}
@@ -62,13 +78,13 @@ const AboutSection = styled.section`
 const AboutGrid = styled.div`
 	display: grid;
 	justify-items: center;
-	grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-	width: 80%;
+	grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+	width: 82%;
 	margin: 0 auto;
 	padding: 1em;
 	border: solid 2px red;
 	h3 {
-		grid-row: 1 / 3;
+		grid-row: 1;
 		grid-column: 1;
 		padding: 1em;
 		border: solid 2px blue;
@@ -79,10 +95,14 @@ const AboutGrid = styled.div`
 		padding: 1em;
 		border: solid 2px green;
 	}
-	p {
-		grid-row: 2 / 3;
+	/* p {
+		grid-row: 2;
 		grid-column: 2;
 		padding: 1em;
 		border: solid 2px orange;
-	}
+	} */
+`;
+
+const StyledIcons = styled.p`
+	font-size: 3em;
 `;

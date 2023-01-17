@@ -5,7 +5,7 @@ export const Footer = () => {
 	return (
 		<FooterContainer>
 			<FooterWrapper>
-				{/* <FooterDiv>
+				<FooterDiv>
 					<h4>JOAR R.</h4>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
@@ -13,14 +13,22 @@ export const Footer = () => {
 						expedita, culpa ipsam aliquid inventore repellendus voluptas iure,
 						vero commodi amet.
 					</p>
-				</FooterDiv> */}
+				</FooterDiv>
+
 				<FooterSoMe>
 					<h4>SOSIALE MEDIER</h4>
-
-					<a href='/'>
+					<a
+						href='https://github.com/joar1?tab=repositories'
+						target='_blank'
+						rel='noreferrer'
+					>
 						<AiFillGithub />
 					</a>
-					<a href='/'>
+					<a
+						href='https://www.linkedin.com/in/joar-reinsnes-938577169/'
+						target='_blank'
+						rel='noreferrer'
+					>
 						<AiFillLinkedin />
 					</a>
 				</FooterSoMe>
@@ -30,37 +38,43 @@ export const Footer = () => {
 };
 
 const FooterContainer = styled.div`
-	background: darkgray;
+	background: black;
 	color: #fff;
 `;
 
 const FooterWrapper = styled.div`
-	width: 80%;
-	margin: 0 auto;
-	padding: 2em;
+	max-width: 100%;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 `;
 
 const FooterDiv = styled.div`
-	border: solid 2px blue;
+	margin: 0;
+	width: 55%;
+	text-align: left;
 	h4 {
-		margin: 1em 0;
-		padding: 1em;
-		border: solid 2px blue;
+		margin-bottom: 0;
+		font-size: 1.8em;
+		padding: 1em 0.4em;
 	}
 	p {
+		margin-top: 0;
 		padding: 1em;
-		border: solid 2px red;
+		width: 70%;
 	}
 `;
 
 const FooterSoMe = styled.div`
 	display: flex;
-	border: solid 2px green;
 	display: inline-block;
 	list-style: none;
-	font-size: 2em;
+	font-size: 1.8em;
 	padding: 1em;
 	a {
 		color: #fff;
+		font-size: 1.4em;
+		margin: 0.2em;
 	}
 `;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
 import About from './About';
+import BackgroundImage from '../images/bg1.jpg';
 
 export const Home = () => {
 	return (
@@ -9,7 +10,7 @@ export const Home = () => {
 			<HomeContainer>
 				<Navbar />
 				<StyledHeader>
-					<h1>JOAR, {<br />} JUNIORUTVIKLER</h1>
+					<h1>JOAR {<br />} JUNIORUTVIKLER</h1>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
 						eos, eius laudantium exercitationem animi atque totam molestias
@@ -33,8 +34,13 @@ export const Home = () => {
 const HomeContainer = styled.div`
 	text-align: center;
 	margin: 0 auto;
-	background: black;
-	color: #fff;
+	background-image: url(${BackgroundImage});
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, 0.486);
+	background-blend-mode: overlay;
+	color: black;
 `;
 
 const StyledHeader = styled.div`

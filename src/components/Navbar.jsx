@@ -30,7 +30,7 @@ const StyledNavbar = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	padding: 0.5em 0;
-	background: #121212;
+	background: #1b1d1e;
 	color: #fff;
 	font-size: 1.3em;
 `;
