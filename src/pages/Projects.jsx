@@ -14,7 +14,7 @@ export const Projects = () => {
 				<ProjectCont>
 					<h1>MockShop</h1>
 					<ProjectImg src={MockShop} alt='shop' />
-					<p>En nettbutikk (api) laget i React</p>
+					<p>En nettbutikk laget med api i React</p>
 					<ProjectLink
 						href='https://joar1.github.io/mockshop/'
 						target='_blank'

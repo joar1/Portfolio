@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { AiFillHtml5 } from 'react-icons/ai';
+import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
 import { DiCss3 } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { RiReactjsFill } from 'react-icons/ri';
@@ -7,8 +7,8 @@ import { RiReactjsFill } from 'react-icons/ri';
 const About = () => {
 	return (
 		<AboutContainer>
-			<AboutSection>
-				<h2>LITT OM MEG</h2>
+			<AboutMe>
+				<h2 id='Om'>LITT OM MEG</h2>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
 					nesciunt sed enim voluptatum aliquam laborum repellat id, obcaecati
@@ -23,9 +23,10 @@ const About = () => {
 					laboriosam obcaecati facere eaque, amet fugit porro facilis. Dolore
 					officiis atque illum?
 				</p>
-			</AboutSection>
-			<AboutGrid>
-				<div>
+			</AboutMe>
+
+			<AboutSection>
+				<LeftBox>
 					<h3>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
 						natus.
@@ -36,16 +37,17 @@ const About = () => {
 						veniam quos deserunt numquam dolorum, minus placeat est itaque
 						quisquam, minima error alias assumenda?
 					</p>
-				</div>
+				</LeftBox>
 
-				<div>
-					<h4>Mine erfaringer:</h4>
+				<RightBox>
+					<h4>Jeg har erfaringer i</h4>
 					<StyledIcons>
 						{' '}
-						<AiFillHtml5 /> <DiCss3 /> <IoLogoJavascript /> <RiReactjsFill />
+						<AiFillHtml5 /> <DiCss3 /> <IoLogoJavascript /> <RiReactjsFill />{' '}
+						<AiFillGithub />
 					</StyledIcons>
-				</div>
-			</AboutGrid>
+				</RightBox>
+			</AboutSection>
 		</AboutContainer>
 	);
 };
@@ -59,7 +61,7 @@ const AboutContainer = styled.div`
 	color: white;
 `;
 
-const AboutSection = styled.section`
+const AboutMe = styled.section`
 	text-align: left;
 	width: 80%;
 	margin: 1em auto;
@@ -75,34 +77,30 @@ const AboutSection = styled.section`
 	}
 `;
 
-const AboutGrid = styled.div`
-	display: grid;
+const AboutSection = styled.div`
+	display: flex;
 	justify-items: center;
-	grid-template: repeat(1, 1fr) / repeat(2, 1fr);
-	width: 82%;
+	justify-content: space-between;
+	width: 80%;
 	margin: 0 auto;
 	padding: 1em;
 	text-align: left;
-	border: solid 2px red;
-	h3 {
-		grid-row: 1;
-		grid-column: 1;
-		border: solid 2px blue;
-	}
+`;
+
+const LeftBox = styled.div`
+	width: 40%;
+	padding: 1em;
+`;
+
+const RightBox = styled.div`
+	width: 40%;
+	padding: 1em;
 	h4 {
-		grid-row: 1;
-		grid-column: 2;
-		padding: 1em;
-		border: solid 2px green;
+		text-align: center;
 	}
-	/* p {
-		grid-row: 2;
-		grid-column: 2;
-		padding: 1em;
-		border: solid 2px orange;
-	} */
 `;
 
 const StyledIcons = styled.p`
+	text-align: center;
 	font-size: 3em;
 `;

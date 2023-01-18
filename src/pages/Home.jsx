@@ -3,7 +3,7 @@ import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
 import About from './About';
 import BackgroundImage from '../images/bg1.jpg';
-import { Projects } from './Projects';
+// import { Projects } from './Projects';
 
 export const Home = () => {
 	return (

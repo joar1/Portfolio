@@ -9,7 +9,7 @@ export const Navbar = () => {
 				<ListContainer>
 					<ul>
 						<li>
-							<StyledA href='/'>OM</StyledA>
+							<StyledA href='#Om'>OM</StyledA>
 						</li>
 						<li>
 							<StyledA href='/'>PROSJEKTER</StyledA>
@@ -24,7 +24,7 @@ export const Navbar = () => {
 	);
 };
 
-const StyledNavbar = styled.div`
+const StyledNavbar = styled.nav`
 	max-width: 100%;
 	display: flex;
 	align-items: center;
