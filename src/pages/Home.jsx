@@ -3,6 +3,7 @@ import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
 import About from './About';
 import BackgroundImage from '../images/bg1.jpg';
+import ContactForm from '../components/ContactForm';
 // import { Projects } from './Projects';
 
 export const Home = () => {
@@ -27,6 +28,7 @@ export const Home = () => {
 				</StyledHeader>
 				<About />
 				{/* <Projects /> */}
+				<ContactForm />
 				<Footer />
 			</HomeContainer>
 		</div>
@@ -53,6 +55,6 @@ const StyledHeader = styled.div`
 	}
 	p {
 		text-align: left;
-		line-height: 1.4em;
+		line-height: 1.5em;
 	}
 `;

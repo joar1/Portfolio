@@ -7,12 +7,7 @@ export const Footer = () => {
 			<FooterWrapper>
 				<FooterDiv>
 					<h4>JOAR R.</h4>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-						corporis eos quibusdam sed natus ut cumque repellat eligendi facilis
-						expedita, culpa ipsam aliquid inventore repellendus voluptas iure,
-						vero commodi amet.
-					</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</FooterDiv>
 
 				<FooterSoMe>

@@ -10,37 +10,26 @@ const About = () => {
 			<AboutMe>
 				<h2 id='Om'>LITT OM MEG</h2>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-					nesciunt sed enim voluptatum aliquam laborum repellat id, obcaecati
-					deserunt expedita, porro quaerat ex reprehenderit corrupti numquam
-					quasi quod tempore nisi debitis assumenda. Dolorem, nemo molestias
-					aliquam, fugit id quae veritatis temporibus omnis repellat eveniet
-					velit iste nostrum aspernatur. Eum ratione dicta, dignissimos illum
-					voluptatibus modi eligendi possimus cum repellendus dolores similique
-					veritatis ex culpa quia beatae eius reprehenderit nostrum reiciendis
-					harum nesciunt, nobis aperiam eaque sit magni. Blanditiis accusamus
-					libero maxime consectetur dolorum rem, ipsum quaerat, iure sed
-					laboriosam obcaecati facere eaque, amet fugit porro facilis. Dolore
-					officiis atque illum?
+					Jeg heter Joar og er en juniorutvikler og tidligere elektriker. På
+					grunn av en yrkesskade måtte jeg tenke nytt og da falt valget på
+					koding, noe som har blitt en ny lidenskap. I og med at jeg liker å
+					løse problemer passer programmering perfekt.
 				</p>
 			</AboutMe>
 
 			<AboutSection>
 				<LeftBox>
-					<h3>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-						natus.
-					</h3>
+					<h3>Hva gjør jeg nå</h3>
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
-						id necessitatibus consectetur eius atque, reiciendis provident
-						veniam quos deserunt numquam dolorum, minus placeat est itaque
-						quisquam, minima error alias assumenda?
+						Jeg går nå på et kurs som heter Kodehode, der jeg lærer
+						Frontend-utvikling og har fått god kontroll på HTML, CSS, Javascript
+						og React. Når det kommer til hobbyer går det i alt fra gaming, gitar
+						og å google "hvordan sentrere div".
 					</p>
 				</LeftBox>
 
 				<RightBox>
-					<h4>Jeg har erfaringer i</h4>
+					<h4>Jeg har erfaring med</h4>
 					<StyledIcons>
 						{' '}
 						<AiFillHtml5 /> <DiCss3 /> <IoLogoJavascript /> <RiReactjsFill />{' '}
@@ -66,6 +55,7 @@ const AboutMe = styled.section`
 	width: 80%;
 	margin: 1em auto;
 	padding: 2em;
+	line-height: 1.5em;
 	h2 {
 		text-align: center;
 		text-decoration: underline;
@@ -73,7 +63,9 @@ const AboutMe = styled.section`
 		font-size: 3em;
 	}
 	p {
-		line-height: 1.4em;
+		padding-top: 2em;
+		width: 70%;
+		margin: 0 auto;
 	}
 `;
 
@@ -85,6 +77,7 @@ const AboutSection = styled.div`
 	margin: 0 auto;
 	padding: 1em;
 	text-align: left;
+	line-height: 1.5em;
 `;
 
 const LeftBox = styled.div`
