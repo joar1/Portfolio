@@ -34,7 +34,7 @@ const ContactForm = () => {
 	return (
 		<ContactWrapper>
 			<StyledContactForm>
-				<h2>Kontakt</h2>
+				<h2 id='Kontakt'>Kontakt</h2>
 				<form ref={form} onSubmit={sendEmail}>
 					<label>Navn</label>
 					<input type='text' name='user_name' required />
@@ -67,7 +67,7 @@ const StyledContactForm = styled.div`
 	padding: 2em;
 	h2 {
 		font-weight: bold;
-		font-size: 2em;
+		font-size: 3em;
 		text-align: center;
 		text-decoration: underline;
 		text-underline-offset: 0.3em;
@@ -89,9 +89,6 @@ const StyledContactForm = styled.div`
 			outline: none;
 			border-radius: 5px;
 			border: 1px solid rgb(220, 220, 220);
-			&:focus {
-				border: 2px solid rgba(0, 206, 158, 1);
-			}
 		}
 		textarea {
 			max-width: 100%;
@@ -103,12 +100,10 @@ const StyledContactForm = styled.div`
 			outline: none;
 			border-radius: 5px;
 			border: 1px solid rgb(220, 220, 220);
-			&:focus {
-				border: 2px solid rgba(0, 206, 158, 1);
-			}
 		}
 		label {
-			margin-top: 1em;
+			margin-top: 1.2em;
+			padding-bottom: 0.2em;
 		}
 		input[type='submit'] {
 			margin-top: 2em;

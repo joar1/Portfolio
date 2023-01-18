@@ -2,12 +2,15 @@ import styled from 'styled-components';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export const Footer = () => {
+	const ScrollTop = (e) => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	};
 	return (
 		<FooterContainer>
 			<FooterWrapper>
 				<FooterDiv>
-					<h4>JOAR R.</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<h4 onClick={ScrollTop}>Hjem</h4>
+					<p>© Copyright 2023</p>
 				</FooterDiv>
 
 				<FooterSoMe>
@@ -51,12 +54,9 @@ const FooterDiv = styled.div`
 	text-align: left;
 	h4 {
 		margin-bottom: 0;
-		font-size: 1.8em;
-		padding: 1em 0.4em;
+		cursor: pointer;
 	}
 	p {
-		margin-top: 0;
-		padding: 1em;
 		width: 70%;
 	}
 `;
@@ -65,11 +65,10 @@ const FooterSoMe = styled.div`
 	display: flex;
 	display: inline-block;
 	list-style: none;
-	font-size: 1.8em;
 	padding: 1em;
 	a {
 		color: #fff;
-		font-size: 1.4em;
+		font-size: 2.5em;
 		margin: 0.2em;
 	}
 `;

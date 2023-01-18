@@ -15,7 +15,7 @@ export const Navbar = () => {
 							<StyledA href='/'>PROSJEKTER</StyledA>
 						</li>
 						<li>
-							<StyledA href='/'>KONTAKT</StyledA>
+							<StyledA href='#Kontakt'>KONTAKT</StyledA>
 						</li>
 					</ul>
 				</ListContainer>
