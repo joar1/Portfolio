@@ -10,10 +10,11 @@ const About = () => {
 			<AboutMe>
 				<h2 id='Om'>LITT OM MEG</h2>
 				<p>
-					Jeg heter Joar og er en juniorutvikler og tidligere elektriker. På
-					grunn av en yrkesskade måtte jeg tenke nytt og da falt valget på
-					koding, noe som har blitt en ny lidenskap. I og med at jeg liker å
-					løse problemer passer programmering perfekt.
+					Jeg heter Joar og er en {<em>juniorutvikler</em>} og tidligere
+					{<em> elektriker</em>}. På grunn av en yrkesskade måtte jeg tenke nytt
+					og da falt valget på {<em>koding</em>}, noe som har blitt en ny
+					lidenskap. I og med at jeg liker å løse problemer passer programmering
+					perfekt.
 				</p>
 			</AboutMe>
 
@@ -22,9 +23,9 @@ const About = () => {
 					<h3>Hva gjør jeg nå</h3>
 					<p>
 						Jeg går nå på et kurs som heter Kodehode, der jeg lærer
-						Frontend-utvikling og har fått god kontroll på HTML, CSS, Javascript
-						og React. Når det kommer til hobbyer går det i alt fra gaming, gitar
-						og å google "hvordan sentrere div".
+						Frontend-utvikling og jeg har fått god kontroll på HTML, CSS,
+						Javascript og React. Når det kommer til hobbyer går det i alt fra
+						gaming, gitar og å google "hvordan sentrere div".
 					</p>
 				</LeftBox>
 

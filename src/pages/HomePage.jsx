@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
-import About from './About';
+import About from './AboutPage';
 import BackgroundImage from '../images/bg1.jpg';
 import ContactForm from '../components/ContactForm';
-// import { Projects } from './Projects';
+// import { Projects } from './ProjectsPage ';
 
 export const Home = () => {
 	return (

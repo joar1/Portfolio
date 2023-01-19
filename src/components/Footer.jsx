@@ -10,7 +10,6 @@ export const Footer = () => {
 			<FooterWrapper>
 				<FooterDiv>
 					<h4 onClick={ScrollTop}>Hjem</h4>
-					<p>© Copyright 2023</p>
 				</FooterDiv>
 
 				<FooterSoMe>
@@ -55,9 +54,7 @@ const FooterDiv = styled.div`
 	h4 {
 		margin-bottom: 0;
 		cursor: pointer;
-	}
-	p {
-		width: 70%;
+		font-size: 1.4em;
 	}
 `;
 

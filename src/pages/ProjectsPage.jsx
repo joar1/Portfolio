@@ -10,8 +10,8 @@ import styled from 'styled-components';
 export const Projects = () => {
 	return (
 		<>
-			<ProjectDiv id='Prosjekter'>
-				<ProjectCont>
+			<ProjectContainer id='Prosjekter'>
+				<ProjectDiv>
 					<h1>MockShop</h1>
 					<ProjectImg src={MockShop} alt='shop' />
 					<p>En nettbutikk laget med api i React</p>
@@ -22,9 +22,9 @@ export const Projects = () => {
 					>
 						<AiOutlineGithub size={50} color='white' />
 					</ProjectLink>
-				</ProjectCont>
+				</ProjectDiv>
 
-				<ProjectCont>
+				<ProjectDiv>
 					<h1>Spoonacular Api</h1>
 					<ProjectImg src={Spoonacular} alt='api' />
 					<p>En nettside som finner middagsoppskrifter ved hjelp av en api</p>
@@ -35,9 +35,9 @@ export const Projects = () => {
 					>
 						<AiOutlineGithub size={50} color='white' />
 					</ProjectLink>
-				</ProjectCont>
+				</ProjectDiv>
 
-				<ProjectCont>
+				<ProjectDiv>
 					<h1>Kalkulator</h1>
 					<ProjectImg src={Kalkulator} alt='kalkulator' />
 					<p>En kalkulator laget i React</p>
@@ -48,9 +48,9 @@ export const Projects = () => {
 					>
 						<AiOutlineGithub size={50} color='white' />
 					</ProjectLink>
-				</ProjectCont>
+				</ProjectDiv>
 
-				<ProjectCont>
+				<ProjectDiv>
 					<h1>Trommemaskin</h1>
 					<ProjectImg src={Drumkit} alt='drumkit' />
 					<p>
@@ -64,9 +64,9 @@ export const Projects = () => {
 					>
 						<AiOutlineGithub size={50} color='white' />
 					</ProjectLink>
-				</ProjectCont>
+				</ProjectDiv>
 
-				<ProjectCont>
+				<ProjectDiv>
 					<h1>To-do List</h1>
 					<ProjectImg src={TodoList} alt='todolist' />
 					<p>En basic huskeliste laget i Javascript</p>
@@ -77,9 +77,9 @@ export const Projects = () => {
 					>
 						<AiOutlineGithub size={50} color='white' />
 					</ProjectLink>
-				</ProjectCont>
+				</ProjectDiv>
 
-				<ProjectCont>
+				<ProjectDiv>
 					<h1>Passord Gen.</h1>
 					<ProjectImg src={PassordGen} alt='shop' />
 					<p>En enkel passord generator laget i javascript</p>
@@ -90,13 +90,13 @@ export const Projects = () => {
 					>
 						<AiOutlineGithub size={50} color='white' />
 					</ProjectLink>
-				</ProjectCont>
-			</ProjectDiv>
+				</ProjectDiv>
+			</ProjectContainer>
 		</>
 	);
 };
 
-const ProjectDiv = styled.div`
+const ProjectContainer = styled.div`
 	margin: 0 auto;
 	padding: 0;
 	display: grid;
@@ -104,13 +104,7 @@ const ProjectDiv = styled.div`
 	grid-template-columns: auto auto auto;
 `;
 
-const ProjectImg = styled.img`
-	height: 250px;
-	width: 300px;
-	object-fit: contain;
-`;
-
-const ProjectCont = styled.div`
+const ProjectDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -119,6 +113,12 @@ const ProjectCont = styled.div`
 	background-color: #181a1b;
 	color: white;
 	border: solid darkcyan 2px;
+`;
+
+const ProjectImg = styled.img`
+	height: 250px;
+	width: 300px;
+	object-fit: contain;
 `;
 
 const ProjectLink = styled.a`
