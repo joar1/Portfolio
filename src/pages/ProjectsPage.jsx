@@ -24,5 +24,7 @@ export const Projects = () => {
 };
 
 const ProjectContainer = styled.div`
+	margin: 1em auto;
+	padding: 5em 0;
 	color: white;
 `;

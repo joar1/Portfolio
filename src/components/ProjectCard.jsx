@@ -43,7 +43,6 @@ const CardDivLeft = styled.div`
 	img {
 		height: 384px;
 		width: 560px;
-		border-radius: 20px;
 	}
 	a {
 		font-size: 1.3em;
@@ -76,7 +75,6 @@ const CardDivRight = styled.div`
 	img {
 		height: 512px;
 		width: 560px;
-		border-radius: 20px;
 	}
 `;
 

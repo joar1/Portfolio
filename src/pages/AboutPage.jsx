@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
-import { DiCss3 } from 'react-icons/di';
-import { IoLogoJavascript } from 'react-icons/io';
-import { RiReactjsFill } from 'react-icons/ri';
+import { AiFillGithub } from 'react-icons/ai';
+import HtmlLogo from '../images/html.png';
+import CssLogo from '../images/css.png';
+import JsLogo from '../images/js.png';
+import ReactLogo from '../images/react.png';
 
 const About = () => {
 	return (
@@ -10,10 +11,9 @@ const About = () => {
 			<AboutMe>
 				<h2 id='Om'>LITT OM MEG</h2>
 				<p>
-					Jeg heter {<b>Joar</b>} og er en {<em>juniorutvikler</em>} og
-					tidligere
-					{<em> elektriker</em>}. På grunn av en yrkesskade måtte jeg tenke nytt
-					og da falt valget på {<em>koding</em>}, noe som har blitt en ny
+					Jeg heter {<b>Joar</b>} og er en {<b>juniorutvikler</b>} og tidligere
+					{<b> elektriker</b>}. På grunn av en yrkesskade måtte jeg tenke nytt
+					og da falt valget på {<b>koding</b>}, noe som har blitt en ny
 					lidenskap. I og med at jeg liker å løse problemer passer programmering
 					perfekt.
 				</p>
@@ -24,19 +24,26 @@ const About = () => {
 					<h3>Hva gjør jeg nå</h3>
 					<p>
 						Jeg går nå på et kurs som heter Kodehode, der jeg lærer
-						Frontend-utvikling og jeg har fått god kontroll på HTML, CSS,
-						Javascript og React. Når det kommer til hobbyer går det i alt fra
-						gaming, gitar og å google "hvordan sentrere div".
+						Frontend-utvikling og jeg har fått god kontroll på{' '}
+						<span style={{ color: '#E24B24' }}>{<b>HTML</b>}</span>,{' '}
+						<span style={{ color: '#1B73B9' }}>{<b>CSS</b>}</span>,{' '}
+						<span style={{ color: '#D4B830' }}>{<b>Javascript</b>}</span> og{' '}
+						<span style={{ color: '#53B2CD' }}>{<b>React</b>}</span>. Når det
+						kommer til hobbyer går det i alt fra gaming, gitar og å google
+						"hvordan sentrere en div".
 					</p>
 				</LeftBox>
 
 				<RightBox>
 					<h4>Jeg har erfaring med</h4>
-					<StyledIcons>
-						{' '}
-						<AiFillHtml5 /> <DiCss3 /> <IoLogoJavascript /> <RiReactjsFill />{' '}
-						<AiFillGithub />
-					</StyledIcons>
+
+					<ImgCont>
+						<LogoImg src={HtmlLogo} alt='html' />
+						<LogoImg src={CssLogo} alt='css' />
+						<LogoImg src={JsLogo} alt='javascript' />
+						<LogoImg src={ReactLogo} alt='react' />
+						<AiFillGithub size={55} />
+					</ImgCont>
 				</RightBox>
 			</AboutSection>
 		</AboutContainer>
@@ -48,6 +55,7 @@ export default About;
 const AboutContainer = styled.div`
 	width: 100%;
 	margin: 0 auto;
+	padding: 5em 0;
 	background: #1b1d1e;
 	color: white;
 `;
@@ -95,7 +103,13 @@ const RightBox = styled.div`
 	}
 `;
 
-const StyledIcons = styled.p`
-	text-align: center;
-	font-size: 3em;
+export const ImgCont = styled.ul`
+	display: flex;
+	justify-content: space-evenly;
+`;
+
+export const LogoImg = styled.img`
+	height: 50px;
+	width: 50px;
+	object-fit: contain;
 `;
