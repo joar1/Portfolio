@@ -10,7 +10,8 @@ const About = () => {
 			<AboutMe>
 				<h2 id='Om'>LITT OM MEG</h2>
 				<p>
-					Jeg heter Joar og er en {<em>juniorutvikler</em>} og tidligere
+					Jeg heter {<b>Joar</b>} og er en {<em>juniorutvikler</em>} og
+					tidligere
 					{<em> elektriker</em>}. På grunn av en yrkesskade måtte jeg tenke nytt
 					og da falt valget på {<em>koding</em>}, noe som har blitt en ny
 					lidenskap. I og med at jeg liker å løse problemer passer programmering

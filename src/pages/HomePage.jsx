@@ -4,7 +4,7 @@ import { Navbar } from '../components/Navbar';
 import About from './AboutPage';
 import BackgroundImage from '../images/bg1.jpg';
 import ContactForm from '../components/ContactForm';
-// import { Projects } from './ProjectsPage ';
+import { Projects } from '../pages/ProjectsPage';
 
 export const Home = () => {
 	return (
@@ -27,7 +27,7 @@ export const Home = () => {
 					</p>
 				</StyledHeader>
 				<About />
-				{/* <Projects /> */}
+				<Projects />
 				<ContactForm />
 				<Footer />
 			</HomeContainer>
@@ -38,18 +38,22 @@ export const Home = () => {
 const HomeContainer = styled.div`
 	text-align: center;
 	margin: 0 auto;
+	color: black;
+`;
+
+const StyledHeader = styled.div`
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 3em 10em;
 	background-image: url(${BackgroundImage});
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.486);
 	background-blend-mode: overlay;
-	color: black;
-`;
-
-const StyledHeader = styled.div`
-	margin: 5em auto;
-	width: 80%;
+	img {
+		width: 100%;
+	}
 	h1 {
 		font-size: 5em;
 	}

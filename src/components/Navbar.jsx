@@ -12,7 +12,7 @@ export const Navbar = () => {
 							<StyledA href='#Om'>OM</StyledA>
 						</li>
 						<li>
-							<StyledA href='/'>PROSJEKTER</StyledA>
+							<StyledA href='#Prosjekter'>PROSJEKTER</StyledA>
 						</li>
 						<li>
 							<StyledA href='#Kontakt'>KONTAKT</StyledA>
