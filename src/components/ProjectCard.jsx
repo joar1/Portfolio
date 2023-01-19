@@ -41,7 +41,7 @@ const CardDivLeft = styled.div`
 	padding: 1em;
 	border: solid 2px blue;
 	img {
-		height: 450px;
+		height: 384px;
 		width: 560px;
 		border-radius: 20px;
 	}
@@ -59,6 +59,7 @@ const InfoWrapper = styled.div`
 	padding-left: 5em;
 	text-align: left;
 	margin: 0 auto;
+	border: solid 2px white;
 `;
 
 const StyledP1Left = styled.p`
