@@ -14,9 +14,14 @@ export const Projects = () => {
 			<ProjectContainer id='Prosjekter'>
 				<CardLeft
 					img={MockShop}
-					paragraph='MockShop'
-					paragraphTwo='En nettbutikk laget med hjelp av en api '
-					linkName='GitHub'
+					title='MockShop'
+					paragraph='En nettbutikk laget med hjelp av en api '
+					// linkName='GitHub'
+				/>
+				<CardRight
+					title='SpoonAcular'
+					paragraph='En nettside som finner middagsoppskrifter ved hjelp av en api'
+					img={Spoonacular}
 				/>
 			</ProjectContainer>
 		</>

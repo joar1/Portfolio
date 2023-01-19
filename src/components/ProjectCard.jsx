@@ -5,13 +5,13 @@ export function CardLeft(props) {
 		<CardContainer>
 			<CardDivLeft>
 				<img src={props.img} alt='#' />
-				<InfoWrapper>
+				<InfoWrapperLeft>
+					<StyledH2Left>{props.title}</StyledH2Left>
 					<StyledP1Left>{props.paragraph}</StyledP1Left>
-					<StyledP2Left>{props.paragraphTwo}</StyledP2Left>
 					<a href={props.link} target='_blank' rel='noreferrer'>
 						{props.linkName}
 					</a>{' '}
-				</InfoWrapper>
+				</InfoWrapperLeft>
 			</CardDivLeft>
 		</CardContainer>
 	);
@@ -21,8 +21,13 @@ export function CardRight(props) {
 	return (
 		<CardContainer>
 			<CardDivRight>
-				<StyledP1Right>{props.paragraph}</StyledP1Right>
-				<StyledP2Right>{props.paragraphTwo}</StyledP2Right>
+				<InfoWrapperRight>
+					<StyledH2Right>{props.title}</StyledH2Right>
+					<StyledP1Right>{props.paragraph}</StyledP1Right>
+					<a href={props.link} target='_blank' rel='noreferrer'>
+						{props.linkName}
+					</a>{' '}
+				</InfoWrapperRight>
 				<img src={props.img} alt='#' />
 			</CardDivRight>
 		</CardContainer>
@@ -32,14 +37,14 @@ export function CardRight(props) {
 const CardContainer = styled.div`
 	margin: 0 auto;
 	width: 80%;
-	line-height: 1.3;
+	line-height: 1.5;
 `;
 
 const CardDivLeft = styled.div`
 	display: flex;
 	align-items: center;
 	padding: 1em;
-	border: solid 2px blue;
+	margin: 2em auto;
 	img {
 		height: 384px;
 		width: 560px;
@@ -52,35 +57,43 @@ const CardDivLeft = styled.div`
 	}
 `;
 
-const InfoWrapper = styled.div`
+const InfoWrapperLeft = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding-left: 5em;
 	text-align: left;
-	margin: 0 auto;
-	border: solid 2px white;
+	margin: 0 0 0 4em;
+	padding: 1em;
 `;
 
-const StyledP1Left = styled.p`
-	font-size: 3em;
+const StyledH2Left = styled.h4`
+	font-size: 2em;
 	margin-top: 0;
 `;
-const StyledP2Left = styled.p``;
+const StyledP1Left = styled.p``;
 
 const CardDivRight = styled.div`
 	display: flex;
 	align-items: center;
 	padding: 1em;
-	border: solid 2px green;
 	img {
-		height: 512px;
+		height: 384px;
 		width: 560px;
 	}
 `;
 
-const StyledP1Right = styled.p`
-	font-size: 3em;
+const InfoWrapperRight = styled.div`
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin: 0 4em 0 0;
+	padding: 1em;
+`;
+
+const StyledH2Right = styled.h2`
+	font-size: 2em;
 	margin-top: 0;
 `;
 
-const StyledP2Right = styled.p``;
+const StyledP1Right = styled.p`
+	text-align: left;
+`;
