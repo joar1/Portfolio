@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.c15a6a89.css","mappings":"AAAA,KAGC,qBAAsB,CAEtB,+CAAoD,CAJpD,QAAS,CACT,SAAU,CAEV,sBAED","sources":["index.css"],"sourcesContent":["body {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tscroll-behavior: smooth;\n\tfont-family: 'Jetbrains Mono', Helvetica, sans-serif;\n}\n"],"names":[],"sourceRoot":""}
