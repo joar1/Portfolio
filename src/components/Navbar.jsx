@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import CV from '../assets/joarCv.pdf';
 
 export const Navbar = () => {
 	return (
@@ -15,6 +16,11 @@ export const Navbar = () => {
 						</li>
 						<li>
 							<StyledA href='#Kontakt'>KONTAKT</StyledA>
+						</li>
+						<li>
+							<StyledA href={CV} download>
+								CV
+							</StyledA>
 						</li>
 					</ul>
 				</ListContainer>

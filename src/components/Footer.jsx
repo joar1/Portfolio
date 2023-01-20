@@ -15,18 +15,18 @@ export const Footer = () => {
 				<FooterSoMe>
 					<h4>SOSIALE MEDIER</h4>
 					<a
-						href='https://github.com/joar1?tab=repositories'
-						target='_blank'
-						rel='noreferrer'
-					>
-						<AiFillGithub />
-					</a>
-					<a
 						href='https://www.linkedin.com/in/joar-reinsnes-938577169/'
 						target='_blank'
 						rel='noreferrer'
 					>
 						<AiFillLinkedin />
+					</a>
+					<a
+						href='https://github.com/joar1?tab=repositories'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<AiFillGithub />
 					</a>
 				</FooterSoMe>
 			</FooterWrapper>
@@ -48,11 +48,9 @@ const FooterWrapper = styled.div`
 `;
 
 const FooterDiv = styled.div`
-	margin: 0;
-	width: 55%;
+	width: 80%;
 	text-align: left;
 	h4 {
-		margin-bottom: 0;
 		cursor: pointer;
 		font-size: 1.4em;
 	}
@@ -62,7 +60,6 @@ const FooterSoMe = styled.div`
 	display: flex;
 	display: inline-block;
 	list-style: none;
-	padding: 1em;
 	a {
 		color: #fff;
 		font-size: 2.5em;
