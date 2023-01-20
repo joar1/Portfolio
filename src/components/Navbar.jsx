@@ -5,7 +5,6 @@ export const Navbar = () => {
 		<>
 			<StyledNavbar>
 				<StyledHome>JOAR R.</StyledHome>
-
 				<ListContainer>
 					<ul>
 						<li>

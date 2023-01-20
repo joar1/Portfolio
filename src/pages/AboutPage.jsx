@@ -35,7 +35,7 @@ const About = () => {
 				</LeftBox>
 
 				<RightBox>
-					<h4>Jeg har erfaring med</h4>
+					<h3>Jeg har erfaring med</h3>
 
 					<ImgCont>
 						<LogoImg src={HtmlLogo} alt='html' />
@@ -76,6 +76,7 @@ const AboutMe = styled.section`
 		padding-top: 2em;
 		width: 70%;
 		margin: 0 auto;
+		font-size: 1.3em;
 	}
 `;
 
@@ -88,6 +89,9 @@ const AboutSection = styled.div`
 	padding: 1em;
 	text-align: left;
 	line-height: 1.5em;
+	p {
+		font-size: 1.3em;
+	}
 `;
 
 const LeftBox = styled.div`
@@ -98,7 +102,7 @@ const LeftBox = styled.div`
 const RightBox = styled.div`
 	width: 40%;
 	padding: 1em;
-	h4 {
+	h3 {
 		text-align: center;
 	}
 `;

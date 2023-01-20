@@ -6,11 +6,11 @@ export function CardLeft(props) {
 			<CardDivLeft>
 				<img src={props.img} alt='#' />
 				<InfoWrapperLeft>
-					<StyledH2Left>{props.title}</StyledH2Left>
+					<StyledH3Left>{props.title}</StyledH3Left>
 					<StyledP1Left>{props.paragraph}</StyledP1Left>
 					<a href={props.link} target='_blank' rel='noreferrer'>
-						{props.linkName}
-					</a>{' '}
+						<button>SE LIVE VERSJON</button>
+					</a>
 				</InfoWrapperLeft>
 			</CardDivLeft>
 		</CardContainer>
@@ -22,11 +22,11 @@ export function CardRight(props) {
 		<CardContainer>
 			<CardDivRight>
 				<InfoWrapperRight>
-					<StyledH2Right>{props.title}</StyledH2Right>
+					<StyledH3Right>{props.title}</StyledH3Right>
 					<StyledP1Right>{props.paragraph}</StyledP1Right>
 					<a href={props.link} target='_blank' rel='noreferrer'>
-						{props.linkName}
-					</a>{' '}
+						<button>SE LIVE VERSJON</button>
+					</a>
 				</InfoWrapperRight>
 				<img src={props.img} alt='#' />
 			</CardDivRight>
@@ -43,17 +43,14 @@ const CardContainer = styled.div`
 const CardDivLeft = styled.div`
 	display: flex;
 	align-items: center;
+	justify-content: right;
 	padding: 1em;
-	margin: 2em auto;
+	margin: 3em auto;
 	img {
-		height: 384px;
-		width: 560px;
-	}
-	a {
-		font-size: 1.3em;
-		padding: 0.1em;
-		font-weight: bold;
-		text-decoration: none;
+		max-width: 60%;
+		max-height: 100%;
+		border-radius: 25px;
+		object-fit: contain;
 	}
 `;
 
@@ -63,21 +60,41 @@ const InfoWrapperLeft = styled.div`
 	text-align: left;
 	margin: 0 0 0 4em;
 	padding: 1em;
+	button {
+		background: green;
+		color: white;
+		border: none;
+		border-radius: 10px;
+		padding: 15px;
+		min-height: 30px;
+		min-width: 120px;
+		font-weight: 600;
+		&:hover {
+			transform: translateY(+1px);
+			transition: 0.3s;
+			cursor: pointer;
+		}
+	}
 `;
 
-const StyledH2Left = styled.h4`
+const StyledH3Left = styled.h3`
 	font-size: 2em;
 	margin-top: 0;
 `;
-const StyledP1Left = styled.p``;
+const StyledP1Left = styled.p`
+	text-align: left;
+`;
 
 const CardDivRight = styled.div`
 	display: flex;
 	align-items: center;
 	padding: 1em;
+	margin: 3em auto;
 	img {
-		height: 384px;
-		width: 560px;
+		max-width: 60%;
+		max-height: 100%;
+		border-radius: 25px;
+		object-fit: contain;
 	}
 `;
 
@@ -87,9 +104,24 @@ const InfoWrapperRight = styled.div`
 	text-align: left;
 	margin: 0 4em 0 0;
 	padding: 1em;
+	button {
+		background: green;
+		color: white;
+		border: none;
+		border-radius: 10px;
+		padding: 15px;
+		min-height: 30px;
+		min-width: 120px;
+		font-weight: 600;
+		&:hover {
+			transform: translateY(+1px);
+			transition: 0.3s;
+			cursor: pointer;
+		}
+	}
 `;
 
-const StyledH2Right = styled.h2`
+const StyledH3Right = styled.h3`
 	font-size: 2em;
 	margin-top: 0;
 `;

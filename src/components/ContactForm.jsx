@@ -1,12 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
-// import Modal from './Modal';
+import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 
 const ContactForm = () => {
 	const form = useRef();
-
-	// const [openModal, setOpenModal] = useState(false);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -28,25 +26,33 @@ const ContactForm = () => {
 				}
 			);
 		e.target.reset();
-		// setOpenModal(true);
 	};
 
 	return (
 		<ContactWrapper>
 			<StyledContactForm>
-				<h2 id='Kontakt'>Kontakt</h2>
-				<form ref={form} onSubmit={sendEmail}>
-					<label>Navn</label>
-					<input type='text' name='user_name' required />
+				<ContactContainer>
+					<ContactDiv>
+						<h2 id='Kontakt'>Kontakt</h2>
+						<p>
+							<AiOutlineMail /> joar1.kodehode@gmail.com
+						</p>
+						<p>
+							<AiOutlinePhone /> 90052403
+						</p>
+					</ContactDiv>
+					<form ref={form} onSubmit={sendEmail}>
+						<label>Navn</label>
+						<input type='text' name='user_name' required />
 
-					<label>Email</label>
-					<input type='email' name='user_email' required />
+						<label>Email</label>
+						<input type='email' name='user_email' required />
 
-					<label>Melding</label>
-					<textarea name='message' />
-					<input type='submit' value='Send' />
-					{/* {openModal && <Modal closeModal={setOpenModal} />} */}
-				</form>
+						<label>Melding</label>
+						<textarea name='message' />
+						<input type='submit' value='Send' />
+					</form>
+				</ContactContainer>
 			</StyledContactForm>
 		</ContactWrapper>
 	);
@@ -59,29 +65,39 @@ const ContactWrapper = styled.div`
 	color: white;
 	width: 100%;
 	margin: 0 auto;
+	padding-bottom: 5em 0;
+`;
+
+const ContactContainer = styled.div`
+	display: flex;
+	margin: 5em 0;
+`;
+
+const ContactDiv = styled.div`
+	text-align: left;
+	width: 50%;
+	h2 {
+		text-decoration: underline;
+		text-underline-offset: 0.4em;
+		font-size: 3em;
+		margin-top: 40px;
+	}
+	p {
+		margin: 2em 0;
+		font-size: 1.3em;
+	}
 `;
 
 const StyledContactForm = styled.div`
-	width: 60em;
+	width: 60%;
 	margin: 0 auto;
 	padding: 2em;
-	h2 {
-		font-weight: bold;
-		font-size: 3em;
-		text-align: center;
-		text-decoration: underline;
-		text-underline-offset: 0.3em;
-		margin-top: 2em;
-		margin-bottom: 0.5em;
-	}
-
 	form {
 		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
-		width: 100%;
+		width: 60%;
 		font-size: 1.3em;
-
 		input {
 			width: 100%;
 			height: 35px;
