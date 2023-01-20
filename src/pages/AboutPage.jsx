@@ -4,7 +4,7 @@ import HtmlLogo from '../images/html.png';
 import CssLogo from '../images/css.png';
 import JsLogo from '../images/js.png';
 import ReactLogo from '../images/react.png';
-import JoarBilde from '../images/joar.jpg';
+// import JoarBilde from '../images/joar.jpg';
 
 const About = () => {
 	return (
