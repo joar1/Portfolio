@@ -80,7 +80,8 @@ const ContactDiv = styled.div`
 		text-decoration: underline;
 		text-underline-offset: 0.4em;
 		font-size: 3em;
-		margin-top: 40px;
+		margin-top: 0;
+		padding: 0;
 	}
 	p {
 		margin: 2em 0;

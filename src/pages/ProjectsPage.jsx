@@ -1,4 +1,4 @@
-import { CardLeft, CardRight } from '../components/ProjectCard';
+import { CardLeft } from '../components/ProjectCard';
 import Igrunnen from '../images/igrunnen.png';
 import Spoonacular from '../images/spoonacular.png';
 import MockShop from '../images/mockshop.png';
@@ -16,10 +16,10 @@ export const Projects = () => {
 					paragraph='En nettside jeg laget for et firma i praksisperioden.'
 					link='https://joar1.github.io/igrunn/'
 				/>
-				<CardRight
+				<CardLeft
+					img={Spoonacular}
 					title='SpoonAcular'
 					paragraph='En nettside som finner middagsoppskrifter ved hjelp av en api'
-					img={Spoonacular}
 					link='https://joar1.github.io/spoonacularApi/'
 				/>
 				<CardLeft
@@ -28,10 +28,10 @@ export const Projects = () => {
 					paragraph='En nettbutikk laget med hjelp av en fake store-api '
 					link='https://joar1.github.io/mockshop/'
 				/>
-				<CardRight
+				<CardLeft
+					img={Drumkit}
 					title='Trommemaskin'
 					paragraph='Et trommesett der man kan spille av forskellige lyder med tastaturet.'
-					img={Drumkit}
 					link='https://joar1.github.io/Drum-kit/'
 				/>
 			</ProjectContainer>
@@ -44,11 +44,11 @@ const ProjectContainer = styled.div`
 	padding: 5em 0;
 	color: white;
 	h2 {
-		margin: 0;
 		text-align: center;
 		text-decoration: underline;
 		text-underline-offset: 0.6em;
-		font-size: 3em;
+		font-size: 4em;
+		margin-bottom: 3em;
 	}
 	p {
 		font-size: 1.3em;

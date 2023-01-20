@@ -4,6 +4,7 @@ import HtmlLogo from '../images/html.png';
 import CssLogo from '../images/css.png';
 import JsLogo from '../images/js.png';
 import ReactLogo from '../images/react.png';
+import JoarBilde from '../images/joar.jpg';
 
 const About = () => {
 	return (
@@ -77,6 +78,11 @@ const AboutMe = styled.section`
 		width: 70%;
 		margin: 0 auto;
 		font-size: 1.3em;
+	}
+	img {
+		margin: 0 auto;
+		align-items: center;
+		object-fit: contain;
 	}
 `;
 
