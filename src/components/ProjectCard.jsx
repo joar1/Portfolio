@@ -51,6 +51,7 @@ const CardDivLeft = styled.div`
 		max-height: 100%;
 		border-radius: 25px;
 		object-fit: contain;
+		box-shadow: 0px 0px 5px #fff;
 	}
 `;
 
