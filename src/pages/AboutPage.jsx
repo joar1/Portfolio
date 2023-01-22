@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { AiFillGithub } from 'react-icons/ai';
+import { IoLogoNodejs } from 'react-icons/io';
 import HtmlLogo from '../images/html.png';
 import CssLogo from '../images/css.png';
 import JsLogo from '../images/js.png';
@@ -44,6 +45,7 @@ const About = () => {
 						<LogoImg src={JsLogo} alt='javascript' />
 						<LogoImg src={ReactLogo} alt='react' />
 						<AiFillGithub size={55} />
+						<IoLogoNodejs size={55} />
 					</ImgCont>
 				</RightBox>
 			</AboutSection>

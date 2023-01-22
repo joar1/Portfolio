@@ -29,55 +29,58 @@ const ContactForm = () => {
 	};
 
 	return (
-		<ContactWrapper>
-			<ContactDiv>
-				<h2 id='Kontakt'>Kontakt</h2>
-				<p>
-					<AiOutlineMail /> joar1.kodehode@gmail.com
-				</p>
-				<p>
-					<AiOutlinePhone /> 90052403
-				</p>
-			</ContactDiv>
+		<ContactContainer>
+			<ContactWrapper>
+				<ContactDiv>
+					<h2 id='Kontakt'>Kontakt</h2>
+					<p>
+						<AiOutlineMail /> joar1.kodehode@gmail.com
+					</p>
+					<p>
+						<AiOutlinePhone /> 90052403
+					</p>
+				</ContactDiv>
 
-			<StyledContactForm>
-				<form ref={form} onSubmit={sendEmail}>
-					<label>Navn</label>
-					<input type='text' name='user_name' required />
+				<StyledContactForm>
+					<form ref={form} onSubmit={sendEmail}>
+						<label>Navn</label>
+						<input type='text' name='user_name' required />
 
-					<label>Email</label>
-					<input type='email' name='user_email' required />
+						<label>Email</label>
+						<input type='email' name='user_email' required />
 
-					<label>Melding</label>
-					<textarea name='message' />
-					<input type='submit' value='Send' />
-				</form>
-			</StyledContactForm>
-		</ContactWrapper>
+						<label>Melding</label>
+						<textarea name='message' />
+						<input type='submit' value='Send' />
+					</form>
+				</StyledContactForm>
+			</ContactWrapper>
+		</ContactContainer>
 	);
 };
 
 export default ContactForm;
 
+const ContactContainer = styled.div`
+	background: #121212;
+`;
+
 const ContactWrapper = styled.div`
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	max-width: 100%;
 	margin: 0 auto;
+	width: 85%;
 	padding: 2em;
 	background: #121212;
 	color: white;
 `;
 
 const ContactDiv = styled.div`
-	padding-left: 15em;
+	margin: 0 auto;
 	text-align: left;
 	h2 {
 		text-decoration: underline;
 		text-underline-offset: 0.4em;
 		font-size: 3em;
-		margin-top: -4em;
 	}
 	p {
 		font-size: 1.3em;
@@ -86,14 +89,13 @@ const ContactDiv = styled.div`
 `;
 
 const StyledContactForm = styled.div`
-	width: 50%;
+	width: 40%;
 	margin: 0 auto;
 	padding: 0 2em;
 	form {
 		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
-		width: 60%;
 		padding: 1em;
 		font-size: 1.3em;
 		input {
@@ -103,6 +105,9 @@ const StyledContactForm = styled.div`
 			outline: none;
 			border-radius: 5px;
 			border: 1px solid rgb(220, 220, 220);
+			&:focus {
+				border: green solid 3px;
+			}
 		}
 		textarea {
 			width: 100%;
@@ -111,6 +116,9 @@ const StyledContactForm = styled.div`
 			outline: none;
 			border-radius: 5px;
 			border: 1px solid rgb(220, 220, 220);
+			&:focus {
+				border: green solid 3px;
+			}
 		}
 		label {
 			margin-top: 1.2em;
