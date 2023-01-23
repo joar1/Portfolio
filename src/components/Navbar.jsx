@@ -36,14 +36,13 @@ const StyledNavbar = styled.nav`
 	justify-content: space-between;
 	padding: 0.5em 0;
 	background: #1b1d1e;
-	color: #fff;
+	color: rgb(122, 232, 122);
 	font-size: 1.3em;
 `;
 
 const StyledHome = styled.a`
 	padding-left: 2em;
 	&:hover {
-		color: red;
 		cursor: pointer;
 	}
 `;
@@ -61,7 +60,7 @@ const StyledA = styled.a`
 	text-decoration: none;
 	color: #f1f1f1;
 	&:hover {
-		color: red;
+		color: rgb(122, 232, 122);
 		text-underline-offset: 0.8em;
 	}
 `;

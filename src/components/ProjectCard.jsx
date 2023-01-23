@@ -81,6 +81,7 @@ const InfoWrapperLeft = styled.div`
 const StyledH3Left = styled.h3`
 	font-size: 2em;
 	margin-top: 0;
+	color: rgb(122, 232, 122);
 `;
 const StyledP1Left = styled.p`
 	text-align: left;

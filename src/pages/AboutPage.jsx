@@ -13,11 +13,12 @@ const About = () => {
 			<h2 id='Om'>LITT OM MEG</h2>
 			<AboutMe>
 				<p>
-					Jeg heter {<b>Joar</b>} og er en {<b>juniorutvikler</b>} og tidligere
-					{<b> elektriker</b>}. På grunn av en yrkesskade måtte jeg tenke nytt
-					og da falt valget på {<b>koding</b>}, noe som har blitt en ny
-					lidenskap. I og med at jeg liker å løse problemer passer programmering
-					perfekt.{<br />}
+					Jeg heter {<span>Joar</span>} og er en {<span>juniorutvikler</span>}{' '}
+					og tidligere
+					{<span> elektriker</span>}. På grunn av en yrkesskade måtte jeg tenke
+					nytt og da falt valget på {<span>koding</span>}, noe som har blitt en
+					ny lidenskap. I og med at jeg liker å løse problemer passer
+					programmering perfekt.{<br />}
 					{<br />} Tommel opp for koding.
 				</p>
 				<img src={JoarBilde} alt='bilde' />
@@ -63,7 +64,12 @@ const AboutContainer = styled.div`
 	padding: 5em 0;
 	background: #1b1d1e;
 	color: white;
+	span {
+		color: rgb(122, 232, 122);
+		font-weight: bolder;
+	}
 	h2 {
+		color: rgb(122, 232, 122);
 		text-align: center;
 		text-decoration: underline;
 		text-underline-offset: 0.6em;
@@ -112,6 +118,9 @@ const AboutSection = styled.div`
 const LeftBox = styled.div`
 	width: 40%;
 	padding: 1em;
+	h3 {
+		color: rgb(122, 232, 122);
+	}
 `;
 
 const RightBox = styled.div`
@@ -119,6 +128,7 @@ const RightBox = styled.div`
 	padding: 1em;
 	h3 {
 		text-align: center;
+		color: rgb(122, 232, 122);
 	}
 `;
 

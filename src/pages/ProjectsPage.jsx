@@ -49,6 +49,7 @@ const ProjectContainer = styled.div`
 		text-underline-offset: 0.6em;
 		font-size: 4em;
 		margin-bottom: 3em;
+		color: rgb(122, 232, 122);
 	}
 	p {
 		font-size: 1.3em;

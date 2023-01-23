@@ -41,7 +41,6 @@ const FooterContainer = styled.div`
 
 const FooterWrapper = styled.div`
 	max-width: 100%;
-	padding: 1em;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -53,6 +52,7 @@ const FooterDiv = styled.div`
 	h4 {
 		cursor: pointer;
 		font-size: 1.4em;
+		color: rgb(122, 232, 122);
 	}
 `;
 
@@ -61,8 +61,8 @@ const FooterSoMe = styled.div`
 	display: inline-block;
 	list-style: none;
 	a {
-		color: #fff;
+		color: rgb(122, 232, 122);
 		font-size: 2.5em;
-		margin: 0.2em;
+		margin: 0 0.2em;
 	}
 `;
