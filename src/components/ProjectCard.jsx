@@ -61,6 +61,9 @@ const InfoWrapperLeft = styled.div`
 	text-align: left;
 	margin: 0 0 0 4em;
 	padding: 1em;
+	a {
+		margin-top: 3em;
+	}
 	button {
 		background: green;
 		color: white;

@@ -41,7 +41,8 @@ const StyledNavbar = styled.nav`
 `;
 
 const StyledHome = styled.a`
-	padding-left: 2em;
+	padding-left: 1em;
+	font-size: 1.5em;
 	&:hover {
 		cursor: pointer;
 	}
