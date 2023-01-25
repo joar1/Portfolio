@@ -8,7 +8,7 @@ import { Projects } from '../pages/ProjectsPage';
 
 export const Home = () => {
 	return (
-		<div>
+		<ProjectContainer>
 			<HomeContainer>
 				<Navbar />
 				<StyledHeader>
@@ -19,9 +19,14 @@ export const Home = () => {
 				<ContactForm />
 				<Footer />
 			</HomeContainer>
-		</div>
+		</ProjectContainer>
 	);
 };
+
+const ProjectContainer = styled.div`
+	display: grid;
+	grid-template-columns: 1fr;
+`;
 
 const HomeContainer = styled.div`
 	margin: 0 auto;
