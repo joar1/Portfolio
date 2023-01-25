@@ -17,23 +17,6 @@ export function CardLeft(props) {
 	);
 }
 
-// export function CardRight(props) {
-// 	return (
-// 		<CardContainer>
-// 			<CardDivRight>
-// 				<InfoWrapperRight>
-// 					<StyledH3Right>{props.title}</StyledH3Right>
-// 					<StyledP1Right>{props.paragraph}</StyledP1Right>
-// 					<a href={props.link} target='_blank' rel='noreferrer'>
-// 						<button>SE LIVE VERSJON</button>
-// 					</a>
-// 				</InfoWrapperRight>
-// 				<img src={props.img} alt='#' />
-// 			</CardDivRight>
-// 		</CardContainer>
-// 	);
-// }
-
 const CardContainer = styled.div`
 	margin: 0 auto;
 	width: 80%;
@@ -85,52 +68,8 @@ const StyledH3Left = styled.h3`
 	font-size: 2em;
 	margin-top: 0;
 	color: rgb(122, 232, 122);
+	text-shadow: green 1px 0 10px;
 `;
 const StyledP1Left = styled.p`
 	text-align: left;
 `;
-
-// const CardDivRight = styled.div`
-// 	display: flex;
-// 	align-items: center;
-// 	padding: 1em;
-// 	margin: 3em auto;
-// 	img {
-// 		max-width: 60%;
-// 		max-height: 100%;
-// 		border-radius: 25px;
-// 		object-fit: contain;
-// 	}
-// `;
-
-// const InfoWrapperRight = styled.div`
-// 	display: flex;
-// 	flex-direction: column;
-// 	text-align: left;
-// 	margin: 0 4em 0 0;
-// 	padding: 1em;
-// 	button {
-// 		background: green;
-// 		color: white;
-// 		border: none;
-// 		border-radius: 10px;
-// 		padding: 15px;
-// 		min-height: 30px;
-// 		min-width: 120px;
-// 		font-weight: 600;
-// 		&:hover {
-// 			transform: translateY(+1px);
-// 			transition: 0.3s;
-// 			cursor: pointer;
-// 		}
-// 	}
-// `;
-
-// const StyledH3Right = styled.h3`
-// 	font-size: 2em;
-// 	margin-top: 0;
-// `;
-
-// const StyledP1Right = styled.p`
-// 	text-align: left;
-// `;

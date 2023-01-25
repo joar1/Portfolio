@@ -37,6 +37,7 @@ const StyledNavbar = styled.nav`
 	padding: 0.5em 0;
 	background: #1b1d1e;
 	color: rgb(122, 232, 122);
+	text-shadow: green 1px 0 10px;
 	font-size: 1.3em;
 `;
 
@@ -62,6 +63,6 @@ const StyledA = styled.a`
 	color: #f1f1f1;
 	&:hover {
 		color: rgb(122, 232, 122);
-		text-underline-offset: 0.8em;
+		text-shadow: green 1px 0 10px;
 	}
 `;

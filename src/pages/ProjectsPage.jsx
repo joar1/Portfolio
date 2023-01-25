@@ -40,16 +40,17 @@ export const Projects = () => {
 };
 
 const ProjectContainer = styled.div`
-	margin: 1em auto;
-	padding: 5em 0;
+	margin: 0.5em auto;
+	padding: 1em 0;
 	color: white;
 	h2 {
 		text-align: center;
 		text-decoration: underline;
 		text-underline-offset: 0.6em;
 		font-size: 4em;
-		margin-bottom: 3em;
+		margin-bottom: 1em;
 		color: rgb(122, 232, 122);
+		text-shadow: green 1px 0 10px;
 	}
 	p {
 		font-size: 1.3em;

@@ -64,12 +64,9 @@ const AboutContainer = styled.div`
 	padding: 5em 0;
 	background: #1b1d1e;
 	color: white;
-	span {
-		color: rgb(122, 232, 122);
-		font-weight: bolder;
-	}
 	h2 {
 		color: rgb(122, 232, 122);
+		text-shadow: green 1px 0 10px;
 		text-align: center;
 		text-decoration: underline;
 		text-underline-offset: 0.6em;
@@ -91,6 +88,11 @@ const AboutMe = styled.section`
 		margin: 0 auto;
 		font-size: 1.3em;
 		width: 40%;
+	}
+	span {
+		color: rgb(122, 232, 122);
+		text-shadow: green 1px 0 10px;
+		font-weight: bolder;
 	}
 	img {
 		margin: 0 auto;
@@ -120,6 +122,7 @@ const LeftBox = styled.div`
 	padding: 1em;
 	h3 {
 		color: rgb(122, 232, 122);
+		text-shadow: green 1px 0 10px;
 	}
 `;
 
@@ -129,6 +132,7 @@ const RightBox = styled.div`
 	h3 {
 		text-align: center;
 		color: rgb(122, 232, 122);
+		text-shadow: green 1px 0 10px;
 	}
 `;
 

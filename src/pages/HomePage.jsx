@@ -24,7 +24,6 @@ export const Home = () => {
 };
 
 const HomeContainer = styled.div`
-	text-align: center;
 	margin: 0 auto;
 	color: black;
 `;
@@ -33,6 +32,7 @@ const StyledHeader = styled.div`
 	margin: 0 auto;
 	max-width: 100%;
 	padding: 3em 0;
+	text-align: center;
 	background-image: url(${BackgroundImage});
 	background-position: center center;
 	background-size: cover;
