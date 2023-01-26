@@ -71,6 +71,7 @@ const AboutContainer = styled.div`
 		text-decoration: underline;
 		text-underline-offset: 0.6em;
 		font-size: 3em;
+		margin-top: 0;
 	}
 	@media (max-width: 768px) {
 		display: grid;
@@ -82,18 +83,17 @@ const AboutContainer = styled.div`
 
 const AboutMe = styled.section`
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	text-align: left;
-	width: 80%;
 	margin: 1em auto;
-	padding: 2em;
+	padding: 2em 0;
 	line-height: 1.5em;
 	p {
 		padding-top: 2em;
-		width: 70%;
+		width: 45%;
 		margin: 0 auto;
 		font-size: 1.3em;
-		width: 40%;
 	}
 	span {
 		color: rgb(122, 232, 122);
@@ -116,9 +116,8 @@ const AboutSection = styled.div`
 	display: flex;
 	justify-items: center;
 	justify-content: space-between;
-	width: 80%;
 	margin: 0 auto;
-	padding: 1em;
+	padding: 1em 0;
 	text-align: left;
 	line-height: 1.5em;
 	p {
@@ -127,8 +126,8 @@ const AboutSection = styled.div`
 `;
 
 const LeftBox = styled.div`
-	width: 40%;
-	padding: 1em;
+	margin: 0 auto;
+	width: 45%;
 	h3 {
 		color: rgb(122, 232, 122);
 		text-shadow: green 1px 0 10px;
@@ -136,8 +135,7 @@ const LeftBox = styled.div`
 `;
 
 const RightBox = styled.div`
-	width: 40%;
-	padding: 1em;
+	margin: 0 auto;
 	h3 {
 		text-align: center;
 		color: rgb(122, 232, 122);
