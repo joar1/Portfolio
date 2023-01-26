@@ -8,34 +8,30 @@ import { Projects } from '../pages/ProjectsPage';
 
 export const Home = () => {
 	return (
-		<ProjectContainer>
-			<HomeContainer>
-				<Navbar />
-				<StyledHeader>
-					<h1>JOAR {<br />} JUNIORUTVIKLER</h1>
-				</StyledHeader>
-				<About />
-				<Projects />
-				<ContactForm />
-				<Footer />
-			</HomeContainer>
-		</ProjectContainer>
+		<HomeContainer>
+			<Navbar />
+			<StyledHeader>
+				<h1>JOAR {<br />} JUNIORUTVIKLER</h1>
+			</StyledHeader>
+			<About />
+			<Projects />
+			<ContactForm />
+			<Footer />
+		</HomeContainer>
 	);
 };
-
-const ProjectContainer = styled.div`
-	display: grid;
-	grid-template-columns: 1fr;
-`;
 
 const HomeContainer = styled.div`
 	margin: 0 auto;
 	color: black;
+	max-width: 100%;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 `;
 
 const StyledHeader = styled.div`
 	margin: 0 auto;
-	max-width: 100%;
 	padding: 3em 0;
 	text-align: center;
 	background-image: url(${BackgroundImage});
@@ -45,10 +41,11 @@ const StyledHeader = styled.div`
 	background-color: rgba(255, 255, 255, 0.486);
 	background-blend-mode: overlay;
 	img {
-		width: 100%;
+		max-width: 100%;
 	}
 	h1 {
 		font-size: 5em;
+		font-size: 4vw;
 		padding: 1em;
 	}
 `;

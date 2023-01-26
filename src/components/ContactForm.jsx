@@ -82,6 +82,7 @@ const ContactDiv = styled.div`
 		text-underline-offset: 0.4em;
 		font-size: 3em;
 		color: rgb(122, 232, 122);
+		text-shadow: green 1px 0 10px;
 	}
 	p {
 		font-size: 1.3em;

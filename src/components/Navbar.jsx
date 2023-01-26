@@ -37,7 +37,6 @@ const StyledNavbar = styled.nav`
 	padding: 0.5em 0;
 	background: #1b1d1e;
 	color: rgb(122, 232, 122);
-	text-shadow: green 1px 0 10px;
 	font-size: 1.3em;
 `;
 

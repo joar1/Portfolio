@@ -53,6 +53,7 @@ const FooterDiv = styled.div`
 		cursor: pointer;
 		font-size: 1.4em;
 		color: rgb(122, 232, 122);
+		text-shadow: green 1px 0 10px;
 	}
 `;
 
