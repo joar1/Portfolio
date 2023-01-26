@@ -63,6 +63,12 @@ export default ContactForm;
 
 const ContactContainer = styled.div`
 	background: #121212;
+	@media (max-width: 768px) {
+		display: grid;
+		grid-template-columns: 1fr;
+		font-size: 2vw;
+		max-width: 100%;
+	}
 `;
 
 const ContactWrapper = styled.div`

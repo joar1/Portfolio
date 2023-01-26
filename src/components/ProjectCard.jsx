@@ -56,6 +56,9 @@ const InfoWrapperLeft = styled.div`
 		min-height: 30px;
 		min-width: 120px;
 		font-weight: 600;
+		@media (max-width: 768px) {
+			font-size: 2vw;
+		}
 		&:hover {
 			transform: translateY(+1px);
 			transition: 0.3s;

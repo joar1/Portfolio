@@ -72,6 +72,12 @@ const AboutContainer = styled.div`
 		text-underline-offset: 0.6em;
 		font-size: 3em;
 	}
+	@media (max-width: 768px) {
+		display: grid;
+		grid-template-columns: 1fr;
+		font-size: 2vw;
+		max-width: 100%;
+	}
 `;
 
 const AboutMe = styled.section`
@@ -100,6 +106,9 @@ const AboutMe = styled.section`
 		align-items: center;
 		object-fit: contain;
 		box-shadow: 0px 0px 5px #fff;
+		@media (max-width: 768px) {
+			box-shadow: none;
+		}
 	}
 `;
 

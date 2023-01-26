@@ -38,6 +38,9 @@ const StyledNavbar = styled.nav`
 	background: #1b1d1e;
 	color: rgb(122, 232, 122);
 	font-size: 1.3em;
+	@media (max-width: 768px) {
+		font-size: 2vh;
+	}
 `;
 
 const StyledHome = styled.a`

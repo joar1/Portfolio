@@ -55,4 +55,10 @@ const ProjectContainer = styled.div`
 	p {
 		font-size: 1.3em;
 	}
+	@media (max-width: 768px) {
+		display: grid;
+		grid-template-columns: 1fr;
+		font-size: 2vw;
+		max-width: 100%;
+	}
 `;
