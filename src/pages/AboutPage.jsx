@@ -74,8 +74,8 @@ const AboutContainer = styled.div`
 		margin-top: 0;
 	}
 	@media (max-width: 768px) {
-		display: grid;
-		grid-template-columns: 1fr;
+		display: flex;
+		flex-direction: column;
 		font-size: 2vw;
 		max-width: 100%;
 	}
@@ -123,14 +123,24 @@ const AboutSection = styled.div`
 	p {
 		font-size: 1.3em;
 	}
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		font-size: 2vw;
+		max-width: 100%;
+	}
 `;
 
 const LeftBox = styled.div`
 	margin: 0 auto;
 	width: 45%;
+	text-align: center;
 	h3 {
 		color: rgb(122, 232, 122);
 		text-shadow: green 1px 0 10px;
+	}
+	p {
+		text-align: left;
 	}
 `;
 
