@@ -91,14 +91,12 @@ const ContactDiv = styled.div`
 `;
 
 const StyledContactForm = styled.div`
-	width: 40%;
+	width: 60%;
 	margin: 0 auto;
-	padding: 0 2em;
 	form {
 		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
-		padding: 1em;
 		font-size: 1.3em;
 		input {
 			width: 100%;
