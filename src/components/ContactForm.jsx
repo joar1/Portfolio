@@ -62,7 +62,11 @@ const ContactForm = () => {
 export default ContactForm;
 
 const ContactContainer = styled.div`
-	background: #1b1d1e;
+	background: linear-gradient(
+		0deg,
+		rgba(27, 29, 30, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
 	@media (max-width: 768px) {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -76,7 +80,11 @@ const ContactWrapper = styled.div`
 	margin: 0 auto;
 	width: 85%;
 	padding: 2em;
-	background: #1b1d1e;
+	background: linear-gradient(
+		0deg,
+		rgba(27, 29, 30, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
 	color: white;
 `;
 

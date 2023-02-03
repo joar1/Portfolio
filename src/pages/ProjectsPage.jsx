@@ -43,7 +43,12 @@ const ProjectContainer = styled.div`
 	margin: 0em auto;
 	padding: 1em 0;
 	color: white;
-	background: #121212;
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(27, 29, 30, 1) 100%
+	);
+
 	h2 {
 		text-align: center;
 		text-decoration: underline;

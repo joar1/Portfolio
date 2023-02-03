@@ -53,7 +53,11 @@ const AboutContainer = styled.div`
 	width: 100%;
 	margin: 0 auto;
 	padding: 5em 0;
-	background: #1b1d1e;
+	background: linear-gradient(
+		0deg,
+		rgba(27, 29, 30, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
 	color: white;
 	@media (max-width: 768px) {
 		display: flex;
