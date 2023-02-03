@@ -87,8 +87,6 @@ const ContactDiv = styled.div`
 		text-decoration: underline;
 		text-underline-offset: 0.4em;
 		font-size: 3em;
-		color: rgb(122, 232, 122);
-		text-shadow: green 1px 0 10px;
 	}
 	p {
 		font-size: 1.3em;
@@ -97,7 +95,7 @@ const ContactDiv = styled.div`
 `;
 
 const StyledContactForm = styled.div`
-	width: 60%;
+	width: 40%;
 	margin: 0 auto;
 	form {
 		display: flex;
@@ -134,12 +132,16 @@ const StyledContactForm = styled.div`
 			margin-top: 2em;
 			margin-bottom: 4em;
 			background: green;
-			width: 50%;
+			width: 100%;
 			margin: 2em auto;
 			color: white;
 			border: none;
 			font-weight: 600;
 			cursor: pointer;
+			@media (max-width: 768px) {
+				display: grid;
+				grid-template-columns: 1fr;
+			}
 		}
 	}
 `;

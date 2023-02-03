@@ -40,6 +40,7 @@ const StyledNavbar = styled.nav`
 	font-size: 1.3em;
 	@media (max-width: 768px) {
 		font-size: 2vh;
+		max-width: 100%;
 	}
 `;
 

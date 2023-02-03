@@ -10,18 +10,20 @@ import JoarBilde from '../images/joar.jpg';
 const About = () => {
 	return (
 		<AboutContainer>
-			<h2 id='Om'>LITT OM MEG</h2>
 			<AboutMe>
-				<p>
-					Jeg heter {<span>Joar</span>} og er en {<span>juniorutvikler</span>}{' '}
-					og tidligere
-					{<span> elektriker</span>}. På grunn av en yrkesskade måtte jeg tenke
-					nytt og da falt valget på {<span>koding</span>}, noe som har blitt en
-					ny lidenskap. I og med at jeg liker å løse problemer passer
-					programmering perfekt.{<br />}
-					{<br />} Tommel opp for koding.
-				</p>
 				<img src={JoarBilde} alt='bilde' />
+				<AboutText>
+					<h2 id='Om'>LITT OM MEG</h2>
+					<p>
+						Jeg heter {<span>Joar</span>} og er en {<span>juniorutvikler</span>}{' '}
+						og tidligere
+						{<span> elektriker</span>}. På grunn av en yrkesskade måtte jeg
+						tenke nytt og da falt valget på {<span>koding</span>}, noe som har
+						blitt en ny lidenskap. I og med at jeg liker å løse problemer passer
+						programmering perfekt.{<br />}
+						{<br />} Tommel opp for koding.
+					</p>
+				</AboutText>
 			</AboutMe>
 
 			<AboutSection>
@@ -64,15 +66,6 @@ const AboutContainer = styled.div`
 	padding: 5em 0;
 	background: #1b1d1e;
 	color: white;
-	h2 {
-		color: rgb(122, 232, 122);
-		text-shadow: green 1px 0 10px;
-		text-align: center;
-		text-decoration: underline;
-		text-underline-offset: 0.6em;
-		font-size: 3em;
-		margin-top: 0;
-	}
 	@media (max-width: 768px) {
 		display: flex;
 		flex-direction: column;
@@ -84,38 +77,53 @@ const AboutContainer = styled.div`
 const AboutMe = styled.section`
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	text-align: left;
+	justify-content: space-around;
+	margin: 0 auto;
+	width: 90%;
 	margin: 1em auto;
-	padding: 2em 0;
 	line-height: 1.5em;
-	p {
-		padding-top: 2em;
-		width: 45%;
-		margin: 0 auto;
-		font-size: 1.3em;
-	}
+
 	span {
 		color: rgb(122, 232, 122);
-		text-shadow: green 1px 0 10px;
 		font-weight: bolder;
 	}
 	img {
-		margin: 0 auto;
-		width: 20%;
-		align-items: center;
-		object-fit: contain;
+		height: auto;
+		width: 430px;
 		box-shadow: 0px 0px 5px #fff;
 		@media (max-width: 768px) {
 			box-shadow: none;
+			max-width: 100%;
+			height: 400px;
 		}
 	}
 `;
+const AboutText = styled.div`
+	width: 50%;
+	h2 {
+		padding: 1em;
+		text-decoration: underline;
+		text-underline-offset: 0.3em;
+		font-size: 2em;
+		@media (max-width: 768px) {
+			text-decoration: none;
+			font-size: 1em;
+		}
+	}
+
+	p {
+		padding: 1em;
+		font-size: 1.3em;
+	}
+`;
+
+// Skills and current status
 
 const AboutSection = styled.div`
 	display: flex;
 	justify-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
+	width: 90%;
 	margin: 0 auto;
 	padding: 1em 0;
 	text-align: left;
@@ -125,7 +133,8 @@ const AboutSection = styled.div`
 	}
 	@media (max-width: 768px) {
 		display: flex;
-		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
 		font-size: 2vw;
 		max-width: 100%;
 	}
@@ -133,30 +142,16 @@ const AboutSection = styled.div`
 
 const LeftBox = styled.div`
 	margin: 0 auto;
-	width: 45%;
-	text-align: center;
-	h3 {
-		color: rgb(122, 232, 122);
-		text-shadow: green 1px 0 10px;
-	}
-	p {
-		text-align: left;
-	}
+	text-align: left;
+	width: 55%;
 `;
 
 const RightBox = styled.div`
 	margin: 0 auto;
-	h3 {
-		text-align: center;
-		color: rgb(122, 232, 122);
-		text-shadow: green 1px 0 10px;
-	}
+	text-align: center;
 `;
 
-export const ImgCont = styled.ul`
-	display: flex;
-	justify-content: space-evenly;
-`;
+export const ImgCont = styled.ul``;
 
 export const LogoImg = styled.img`
 	height: 50px;

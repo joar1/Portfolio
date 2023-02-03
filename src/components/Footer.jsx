@@ -37,23 +37,24 @@ export const Footer = () => {
 const FooterContainer = styled.div`
 	background: black;
 	color: #fff;
+	@media (max-width: 768px) {
+		max-width: 100%;
+	}
 `;
 
 const FooterWrapper = styled.div`
 	max-width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	padding: 0 2em;
 `;
 
 const FooterDiv = styled.div`
-	width: 80%;
 	text-align: left;
 	h4 {
 		cursor: pointer;
 		font-size: 1.4em;
-		color: rgb(122, 232, 122);
-		text-shadow: green 1px 0 10px;
 	}
 `;
 
