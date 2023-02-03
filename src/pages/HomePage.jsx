@@ -39,7 +39,7 @@ const StyledHeader = styled.div`
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: rgba(255, 255, 255, 0.486);
+	/* background-color: rgba(255, 255, 255, 0.486); */
 	background-blend-mode: overlay;
 	img {
 		max-width: 100%;
@@ -48,5 +48,7 @@ const StyledHeader = styled.div`
 		font-size: 5em;
 		font-size: 4vw;
 		padding: 1em;
+		margin-top: 3em;
+		color: white;
 	}
 `;
