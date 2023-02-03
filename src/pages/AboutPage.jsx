@@ -11,7 +11,7 @@ const About = () => {
 	return (
 		<AboutContainer>
 			<AboutMe>
-				<img src={JoarBilde} alt='bilde' />
+				<PictureOfMe src={JoarBilde} alt='bilde' />
 				<AboutText>
 					<h2 id='Om'>LITT OM MEG</h2>
 					<p>
@@ -23,12 +23,6 @@ const About = () => {
 						programmering perfekt.{<br />}
 						{<br />} Tommel opp for koding.
 					</p>
-				</AboutText>
-			</AboutMe>
-
-			<AboutSection>
-				<LeftBox>
-					<h3>Hva gjør jeg nå</h3>
 					<p>
 						Jeg går nå på et kurs som heter Kodehode, der jeg lærer
 						Frontend-utvikling og jeg har fått god kontroll på{' '}
@@ -39,21 +33,16 @@ const About = () => {
 						kommer til hobbyer går det i alt fra gaming, gitar og å google
 						"hvordan sentrere en div".
 					</p>
-				</LeftBox>
-
-				<RightBox>
-					<h3>Jeg har erfaring med</h3>
-
-					<ImgCont>
+					<LogoWrapper>
 						<LogoImg src={HtmlLogo} alt='html' />
 						<LogoImg src={CssLogo} alt='css' />
 						<LogoImg src={JsLogo} alt='javascript' />
 						<LogoImg src={ReactLogo} alt='react' />
 						<AiFillGithub size={55} />
 						<IoLogoNodejs size={55} />
-					</ImgCont>
-				</RightBox>
-			</AboutSection>
+					</LogoWrapper>
+				</AboutText>
+			</AboutMe>
 		</AboutContainer>
 	);
 };
@@ -76,28 +65,28 @@ const AboutContainer = styled.div`
 
 const AboutMe = styled.section`
 	display: flex;
-	align-items: center;
 	justify-content: space-around;
 	margin: 0 auto;
 	width: 90%;
 	margin: 1em auto;
 	line-height: 1.5em;
-
 	span {
 		color: rgb(122, 232, 122);
 		font-weight: bolder;
 	}
-	img {
+`;
+
+const PictureOfMe = styled.img`
+	height: auto;
+	width: 430px;
+	box-shadow: 0px 0px 5px #fff;
+	@media (max-width: 768px) {
+		box-shadow: none;
+		max-width: 100%;
 		height: auto;
-		width: 430px;
-		box-shadow: 0px 0px 5px #fff;
-		@media (max-width: 768px) {
-			box-shadow: none;
-			max-width: 100%;
-			height: 400px;
-		}
 	}
 `;
+
 const AboutText = styled.div`
 	width: 50%;
 	h2 {
@@ -110,51 +99,22 @@ const AboutText = styled.div`
 			font-size: 1em;
 		}
 	}
-
+	h3 {
+		text-align: center;
+	}
 	p {
 		padding: 1em;
 		font-size: 1.3em;
 	}
 `;
 
-// Skills and current status
-
-const AboutSection = styled.div`
-	display: flex;
-	justify-items: center;
-	justify-content: space-around;
-	width: 90%;
-	margin: 0 auto;
-	padding: 1em 0;
-	text-align: left;
-	line-height: 1.5em;
-	p {
-		font-size: 1.3em;
-	}
-	@media (max-width: 768px) {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		font-size: 2vw;
-		max-width: 100%;
-	}
-`;
-
-const LeftBox = styled.div`
-	margin: 0 auto;
-	text-align: left;
-	width: 55%;
-`;
-
-const RightBox = styled.div`
-	margin: 0 auto;
+const LogoWrapper = styled.div`
 	text-align: center;
 `;
 
-export const ImgCont = styled.ul``;
-
-export const LogoImg = styled.img`
+const LogoImg = styled.img`
 	height: 50px;
 	width: 50px;
+	margin: 0 1em;
 	object-fit: contain;
 `;

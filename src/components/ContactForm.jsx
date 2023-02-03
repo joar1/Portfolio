@@ -62,7 +62,7 @@ const ContactForm = () => {
 export default ContactForm;
 
 const ContactContainer = styled.div`
-	background: #121212;
+	background: #1b1d1e;
 	@media (max-width: 768px) {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -76,7 +76,7 @@ const ContactWrapper = styled.div`
 	margin: 0 auto;
 	width: 85%;
 	padding: 2em;
-	background: #121212;
+	background: #1b1d1e;
 	color: white;
 `;
 

@@ -40,9 +40,10 @@ export const Projects = () => {
 };
 
 const ProjectContainer = styled.div`
-	margin: 0.5em auto;
+	margin: 0em auto;
 	padding: 1em 0;
 	color: white;
+	background: #121212;
 	h2 {
 		text-align: center;
 		text-decoration: underline;
