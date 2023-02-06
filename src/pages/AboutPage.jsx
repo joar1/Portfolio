@@ -75,7 +75,7 @@ const AboutMe = styled.section`
 	margin: 1em auto;
 	line-height: 1.5em;
 	span {
-		color: rgb(122, 232, 122);
+		color: #53b2cd;
 		font-weight: bolder;
 	}
 `;
@@ -114,6 +114,10 @@ const AboutText = styled.div`
 
 const LogoWrapper = styled.div`
 	text-align: center;
+	svg {
+		margin: 0 1em;
+		color: white;
+	}
 `;
 
 const LogoImg = styled.img`

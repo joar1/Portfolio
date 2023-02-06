@@ -78,7 +78,7 @@ const ContactContainer = styled.div`
 const ContactWrapper = styled.div`
 	display: flex;
 	margin: 0 auto;
-	width: 85%;
+	width: 95%;
 	padding: 2em;
 	background: linear-gradient(
 		0deg,

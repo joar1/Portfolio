@@ -42,7 +42,8 @@ const PageContainer = styled.div`
 		font-size: 3em;
 	}
 	span {
-		color: yellow;
+		color: rgb(122, 232, 122);
+		text-shadow: green 1px 0 10px;
 		font-weight: bolder;
 	}
 	@media (max-width: 768px) {

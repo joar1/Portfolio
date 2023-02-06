@@ -53,6 +53,7 @@ const FooterWrapper = styled.div`
 const FooterDiv = styled.div`
 	text-align: left;
 	h4 {
+		color: rgb(122, 232, 122);
 		cursor: pointer;
 		font-size: 1.4em;
 	}
@@ -62,6 +63,7 @@ const FooterSoMe = styled.div`
 	display: flex;
 	display: inline-block;
 	list-style: none;
+	color: rgb(122, 232, 122);
 	a {
 		color: rgb(122, 232, 122);
 		font-size: 2.5em;
