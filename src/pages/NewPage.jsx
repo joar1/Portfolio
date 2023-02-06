@@ -9,8 +9,7 @@ const NewPage = () => {
 					<span>JOAR</span> HER!
 				</h1>
 				<h2>
-					JUNIORUTVIKLER {<br />}
-					MED FOKUS PÅ <span>FRONTEND</span>
+					JUNIORUTVIKLER MED{<br />}FOKUS PÅ <span>FRONTEND</span>
 				</h2>
 			</PageContainer>
 		</>
