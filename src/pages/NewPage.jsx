@@ -23,28 +23,25 @@ const PageContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	max-width: 100%;
-	background: white;
-	height: 100vh;
+	height: 80vh;
 	padding-left: 150px;
 	color: white;
-	font-weight: bold;
-	background: rgb(0, 0, 0);
+	text-shadow: black 0px 0px 2px;
 	background: linear-gradient(
 		0deg,
-		rgba(0, 0, 0, 1) 0%,
-		rgba(146, 6, 124, 1) 100%
+		rgba(0, 0, 0, 1) 00%,
+		rgba(255, 255, 255, 1) 100%
 	);
 	h1 {
-		font-size: 6.5em;
+		font-size: 2em;
 	}
 	h2 {
 		margin-top: 0;
-		font-size: 3em;
+		font-size: 2em;
 	}
 	span {
-		color: rgb(122, 232, 122);
-		text-shadow: green 1px 0 10px;
-		font-weight: bolder;
+		color: #000;
+		text-shadow: none;
 	}
 	@media (max-width: 768px) {
 		display: grid;

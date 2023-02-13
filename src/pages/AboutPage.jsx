@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { AiFillGithub } from 'react-icons/ai';
 import { IoLogoNodejs } from 'react-icons/io';
+import { FiFigma } from 'react-icons/fi';
 import HtmlLogo from '../images/html.png';
 import CssLogo from '../images/css.png';
 import JsLogo from '../images/js.png';
@@ -38,8 +39,9 @@ const About = () => {
 						<LogoImg src={CssLogo} alt='css' />
 						<LogoImg src={JsLogo} alt='javascript' />
 						<LogoImg src={ReactLogo} alt='react' />
-						<AiFillGithub size={55} />
-						<IoLogoNodejs size={55} />
+						<AiFillGithub size={55} style={{ color: '#D4B830' }} />
+						<IoLogoNodejs size={55} style={{ color: '#1B73B9' }} />
+						<FiFigma size={55} style={{ color: '#E24B24' }} />
 					</LogoWrapper>
 				</AboutText>
 			</AboutMe>
