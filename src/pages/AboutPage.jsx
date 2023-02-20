@@ -83,7 +83,7 @@ const AboutMe = styled.section`
 `;
 
 const PictureOfMe = styled.img`
-	height: auto;
+	height: 620px;
 	width: 430px;
 	box-shadow: 0px 0px 5px #fff;
 	@media (max-width: 768px) {

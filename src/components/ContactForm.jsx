@@ -34,7 +34,7 @@ const ContactForm = () => {
 				<ContactDiv>
 					<h2 id='Kontakt'>Kontakt</h2>
 					<p>
-						<AiOutlineMail /> joar1.kodehode@gmail.com
+						<AiOutlineMail /> joar.reinsnes@gmail.com
 					</p>
 					<p>
 						<AiOutlinePhone /> 90052403
@@ -51,7 +51,7 @@ const ContactForm = () => {
 
 						<label>Melding</label>
 						<textarea name='message' />
-						<input type='submit' value='Send' />
+						<input type='submit' value='Send' required />
 					</form>
 				</StyledContactForm>
 			</ContactWrapper>
