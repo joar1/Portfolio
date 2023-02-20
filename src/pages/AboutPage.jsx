@@ -72,7 +72,6 @@ const AboutContainer = styled.div`
 const AboutMe = styled.section`
 	display: flex;
 	justify-content: space-around;
-	margin: 0 auto;
 	width: 90%;
 	margin: 1em auto;
 	line-height: 1.5em;
@@ -84,8 +83,9 @@ const AboutMe = styled.section`
 
 const PictureOfMe = styled.img`
 	height: 620px;
-	width: 430px;
-	box-shadow: 0px 0px 5px #fff;
+	object-fit: contain;
+	box-shadow: 0px 0px 20px #fff;
+	border-radius: 20px;
 	@media (max-width: 768px) {
 		box-shadow: none;
 		max-width: 100%;

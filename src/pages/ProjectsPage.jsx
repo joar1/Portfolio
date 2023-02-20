@@ -48,7 +48,6 @@ const ProjectContainer = styled.div`
 		rgba(0, 0, 0, 1) 0%,
 		rgba(27, 29, 30, 1) 100%
 	);
-
 	h2 {
 		text-align: center;
 		text-decoration: underline;
