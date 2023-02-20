@@ -7,12 +7,14 @@ import CssLogo from '../images/css.png';
 import JsLogo from '../images/js.png';
 import ReactLogo from '../images/react.png';
 import JoarBilde from '../images/joar.jpg';
+import ProfilBilde from '../images/profilbilde.jpg';
 
 const About = () => {
 	return (
 		<AboutContainer>
 			<AboutMe>
-				<PictureOfMe src={JoarBilde} alt='bilde' />
+				{/* <PictureOfMe src={JoarBilde} alt='bilde' /> */}
+				<PictureOfMe src={ProfilBilde} alt='bilde' />
 				<AboutText>
 					<h2 id='Om'>LITT OM MEG</h2>
 					<p>
@@ -22,7 +24,6 @@ const About = () => {
 						tenke nytt og da falt valget på {<span>koding</span>}, noe som har
 						blitt en ny lidenskap. I og med at jeg liker å løse problemer passer
 						programmering perfekt.{<br />}
-						{<br />} Tommel opp for koding.
 					</p>
 					<p>
 						Jeg går nå på et kurs som heter Kodehode, der jeg lærer
@@ -86,10 +87,11 @@ const AboutMe = styled.section`
 `;
 
 const PictureOfMe = styled.img`
-	height: 620px;
+	margin-top: 150px;
+	height: 400px;
 	object-fit: contain;
 	box-shadow: 0px 0px 20px #fff;
-	border-radius: 20px;
+	border-radius: 50%;
 	@media (max-width: 768px) {
 		box-shadow: none;
 		max-width: 100%;

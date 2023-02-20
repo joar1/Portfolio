@@ -11,7 +11,6 @@ export const Footer = () => {
 				<FooterDiv>
 					<h4 onClick={ScrollTop}>Hjem</h4>
 				</FooterDiv>
-
 				<FooterSoMe>
 					<h4>SOSIALE MEDIER</h4>
 					<a
