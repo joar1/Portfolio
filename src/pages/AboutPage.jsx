@@ -61,12 +61,6 @@ const AboutContainer = styled.div`
 		rgba(0, 0, 0, 1) 100%
 	);
 	color: white;
-	@media (max-width: 768px) {
-		display: flex;
-		flex-direction: column;
-		font-size: 2vw;
-		max-width: 100%;
-	}
 `;
 
 const AboutMe = styled.section`
@@ -79,6 +73,16 @@ const AboutMe = styled.section`
 		color: #53b2cd;
 		font-weight: bolder;
 	}
+	@media (max-width: 768px) {
+		grid-template-columns: 1, fr;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		font-size: 2vw;
+		margin: 0 auto;
+		max-width: 100%;
+	}
 `;
 
 const PictureOfMe = styled.img`
@@ -89,7 +93,8 @@ const PictureOfMe = styled.img`
 	@media (max-width: 768px) {
 		box-shadow: none;
 		max-width: 100%;
-		height: auto;
+		height: 20%;
+		width: 30%;
 	}
 `;
 
@@ -100,10 +105,6 @@ const AboutText = styled.div`
 		text-decoration: underline;
 		text-underline-offset: 0.3em;
 		font-size: 2em;
-		@media (max-width: 768px) {
-			text-decoration: none;
-			font-size: 1em;
-		}
 	}
 	h3 {
 		text-align: center;
@@ -111,6 +112,11 @@ const AboutText = styled.div`
 	p {
 		padding: 1em;
 		font-size: 1.3em;
+	}
+	@media (max-width: 768px) {
+		text-decoration: none;
+		font-size: 1em;
+		max-width: 100%;
 	}
 `;
 

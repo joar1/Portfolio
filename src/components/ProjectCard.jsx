@@ -21,6 +21,9 @@ const CardContainer = styled.div`
 	margin: 0 auto;
 	width: 80%;
 	line-height: 1.5;
+	@media (max-width: 768px) {
+		max-width: 100%;
+	}
 `;
 
 const CardDivLeft = styled.div`
@@ -35,6 +38,9 @@ const CardDivLeft = styled.div`
 		border-radius: 25px;
 		object-fit: contain;
 		box-shadow: 0px 0px 5px #fff;
+	}
+	@media (max-width: 768px) {
+		max-width: 100%;
 	}
 `;
 
@@ -58,6 +64,7 @@ const InfoWrapperLeft = styled.div`
 		font-weight: 600;
 		@media (max-width: 768px) {
 			font-size: 2vw;
+			max-width: 100%;
 		}
 		&:hover {
 			transform: translateY(+1px);
