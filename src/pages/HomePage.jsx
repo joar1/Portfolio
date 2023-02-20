@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
 import About from './AboutPage';
-import BackgroundImage from '../images/bg1.jpg';
 import ContactForm from '../components/ContactForm';
 import { Projects } from '../pages/ProjectsPage';
 import NewPage from './NewPage';
@@ -12,9 +11,6 @@ export const Home = () => {
 		<HomeContainer>
 			<Navbar />
 			<NewPage />
-			{/* <StyledHeader>
-				<h1>JOAR {<br />} JUNIORUTVIKLER</h1>
-			</StyledHeader> */}
 			<About />
 			<Projects />
 			<ContactForm />

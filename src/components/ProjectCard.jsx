@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
-export function CardLeft(props) {
+export function ProjectCard(props) {
 	return (
 		<CardContainer>
-			<CardDivLeft>
+			<CardDiv>
 				<img src={props.img} alt='#' />
-				<InfoWrapperLeft>
-					<StyledH3Left>{props.title}</StyledH3Left>
-					<StyledP1Left>{props.paragraph}</StyledP1Left>
+				<InfoWrapper>
+					<StyledH3>{props.title}</StyledH3>
+					<StyledP1>{props.paragraph}</StyledP1>
 					<a href={props.link} target='_blank' rel='noreferrer'>
 						<button>SE LIVE VERSJON</button>
 					</a>
-				</InfoWrapperLeft>
-			</CardDivLeft>
+				</InfoWrapper>
+			</CardDiv>
 		</CardContainer>
 	);
 }
@@ -26,7 +26,7 @@ const CardContainer = styled.div`
 	}
 `;
 
-const CardDivLeft = styled.div`
+const CardDiv = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: right;
@@ -44,7 +44,7 @@ const CardDivLeft = styled.div`
 	}
 `;
 
-const InfoWrapperLeft = styled.div`
+const InfoWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	text-align: left;
@@ -74,12 +74,12 @@ const InfoWrapperLeft = styled.div`
 	}
 `;
 
-const StyledH3Left = styled.h3`
+const StyledH3 = styled.h3`
 	font-size: 2em;
 	margin-top: 0;
 	color: rgb(122, 232, 122);
 	text-shadow: green 1px 0 20px;
 `;
-const StyledP1Left = styled.p`
+const StyledP1 = styled.p`
 	text-align: left;
 `;

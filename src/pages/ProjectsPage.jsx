@@ -1,4 +1,4 @@
-import { CardLeft } from '../components/ProjectCard';
+import { ProjectCard } from '../components/ProjectCard';
 import Igrunnen from '../images/igrunnen.png';
 import Spoonacular from '../images/spoonacular.png';
 import MockShop from '../images/mockshop.png';
@@ -10,25 +10,25 @@ export const Projects = () => {
 		<>
 			<ProjectContainer>
 				<h2 id='Prosjekter'>Prosjekter</h2>
-				<CardLeft
+				<ProjectCard
 					img={Igrunnen}
 					title='Igrunnen'
 					paragraph='En nettside jeg laget for et firma i praksisperioden.'
 					link='https://joar1.github.io/igrunn/'
 				/>
-				<CardLeft
+				<ProjectCard
 					img={Spoonacular}
 					title='SpoonAcular'
 					paragraph='En nettside som finner middagsoppskrifter ved hjelp av en api'
 					link='https://joar1.github.io/spoonacularApi/'
 				/>
-				<CardLeft
+				<ProjectCard
 					img={MockShop}
 					title='MockShop'
 					paragraph='En nettbutikk laget med hjelp av en fake store-api '
 					link='https://joar1.github.io/mockshop/'
 				/>
-				<CardLeft
+				<ProjectCard
 					img={Drumkit}
 					title='Trommemaskin'
 					paragraph='Et trommesett der man kan spille av forskellige lyder med tastaturet.'

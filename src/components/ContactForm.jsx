@@ -40,7 +40,7 @@ const ContactForm = () => {
 						<AiOutlinePhone /> 90052403
 					</p>
 				</ContactDiv>
-
+				<SpanLine />
 				<StyledContactForm>
 					<form ref={form} onSubmit={sendEmail}>
 						<label>Navn</label>
@@ -152,4 +152,13 @@ const StyledContactForm = styled.div`
 			}
 		}
 	}
+`;
+
+const SpanLine = styled.span`
+	display: block;
+	align-items: center;
+	margin: 100px auto;
+	height: 300px;
+	width: 2px;
+	background-color: rgb(122, 232, 122); ;
 `;
