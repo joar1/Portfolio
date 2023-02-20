@@ -71,7 +71,7 @@ const StyledH3Left = styled.h3`
 	font-size: 2em;
 	margin-top: 0;
 	color: rgb(122, 232, 122);
-	text-shadow: green 1px 0 10px;
+	text-shadow: green 1px 0 20px;
 `;
 const StyledP1Left = styled.p`
 	text-align: left;

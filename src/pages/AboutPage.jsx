@@ -52,7 +52,7 @@ const About = () => {
 export default About;
 
 const AboutContainer = styled.div`
-	width: 100%;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 5em 0;
 	background: linear-gradient(
