@@ -35,7 +35,7 @@ const StyledNavbar = styled.nav`
 	align-items: center;
 	justify-content: space-between;
 	padding: 0.5em 0;
-	background: #1b1d1e;
+	background: black;
 	color: rgb(122, 232, 122);
 	font-size: 1.3em;
 	@media (max-width: 768px) {

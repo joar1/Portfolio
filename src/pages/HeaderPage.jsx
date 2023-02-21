@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const NewPage = () => {
+const HeaderPage = () => {
 	return (
 		<>
 			<PageContainer>
@@ -16,9 +16,9 @@ const NewPage = () => {
 	);
 };
 
-export default NewPage;
+export default HeaderPage;
 
-const PageContainer = styled.div`
+const PageContainer = styled.header`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -28,9 +28,9 @@ const PageContainer = styled.div`
 	text-shadow: black 0px 0px 2px;
 	background: radial-gradient(
 		circle,
-		rgba(0, 0, 0, 1) 00%,
-		rgba(48, 48, 48, 1) 48%,
-		rgba(255, 255, 255, 1) 100%
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 1) 50%,
+		rgba(48, 48, 48, 1) 100%
 	);
 	h1 {
 		font-size: 2em;

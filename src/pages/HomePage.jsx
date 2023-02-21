@@ -4,13 +4,13 @@ import { Navbar } from '../components/Navbar';
 import About from './AboutPage';
 import ContactForm from '../components/ContactForm';
 import { Projects } from '../pages/ProjectsPage';
-import NewPage from './NewPage';
+import HeaderPage from './HeaderPage';
 
 export const Home = () => {
 	return (
 		<HomeContainer>
 			<Navbar />
-			<NewPage />
+			<HeaderPage />
 			<About />
 			<Projects />
 			<ContactForm />

@@ -8,7 +8,6 @@ const ContactForm = () => {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
-
 		emailjs
 			.sendForm(
 				/* Service-ID */ 'service_1g3juwx',
@@ -78,7 +77,7 @@ const ContactContainer = styled.div`
 const ContactWrapper = styled.div`
 	display: flex;
 	margin: 0 auto;
-	width: 95%;
+	width: 90%;
 	padding: 2em;
 	background: linear-gradient(
 		0deg,
@@ -91,6 +90,7 @@ const ContactWrapper = styled.div`
 const ContactDiv = styled.div`
 	margin: 0 auto;
 	text-align: left;
+	color: white;
 	h2 {
 		text-decoration: underline;
 		text-underline-offset: 0.4em;
@@ -135,6 +135,7 @@ const StyledContactForm = styled.div`
 		label {
 			margin-top: 1.2em;
 			padding-bottom: 0.2em;
+			color: rgb(122, 232, 122);
 		}
 		input[type='submit'] {
 			margin-top: 2em;
@@ -157,8 +158,12 @@ const StyledContactForm = styled.div`
 const SpanLine = styled.span`
 	display: block;
 	align-items: center;
-	margin: 100px auto;
-	height: 300px;
+	margin: 50px auto;
+	height: 320px;
 	width: 2px;
-	background-color: rgb(122, 232, 122); ;
+	background-color: rgb(122, 232, 122);
+	@media (max-width: 768px) {
+		margin: 100px auto;
+		height: 150px;
+	}
 `;
