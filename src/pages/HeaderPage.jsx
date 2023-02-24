@@ -7,8 +7,8 @@ const HeaderPage = () => {
 				<Header>
 					<h1>
 						HALLO VERDEN, {<br />}
-						<span>JOAR</span> HER! {<br />}
-						JUNIORUTVIKLER MED{<br />}FOKUS PÅ <span>FRONTEND</span>
+						<span>JOAR</span> HER! JUNIORUTVIKLER {<br />} MED FOKUS PÅ{' '}
+						<span>FRONTEND</span>
 					</h1>
 				</Header>
 			</PageContainer>
@@ -26,12 +26,7 @@ const PageContainer = styled.header`
 	height: 80vh;
 	color: white;
 	text-shadow: black 0px 0px 2px;
-	background: radial-gradient(
-		circle,
-		rgba(0, 0, 0, 1) 0%,
-		rgba(0, 0, 0, 1) 50%,
-		rgba(48, 48, 48, 1) 100%
-	);
+	background: black;
 	h1 {
 		font-size: 2em;
 		margin: 0 auto;
@@ -50,7 +45,7 @@ const PageContainer = styled.header`
 `;
 
 const Header = styled.div`
-	margin: 0 auto;
+	margin-left: 10em;
 	@media (max-width: 768px) {
 		display: flex;
 		justify-content: center;

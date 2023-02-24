@@ -67,5 +67,8 @@ const StyledA = styled.a`
 	&:hover {
 		color: rgb(122, 232, 122);
 		text-shadow: green 1px 0 10px;
+		text-decoration: underline;
+		text-underline-offset: 0.4em;
+		text-decoration-thickness: 0.1em;
 	}
 `;
