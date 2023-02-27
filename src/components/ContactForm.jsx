@@ -61,11 +61,9 @@ const ContactForm = () => {
 export default ContactForm;
 
 const ContactContainer = styled.div`
-	background: linear-gradient(
-		0deg,
-		rgba(27, 29, 30, 1) 0%,
-		rgba(0, 0, 0, 1) 100%
-	);
+	height: 80vh;
+	padding: 5em 0;
+	background-color: #1f2833;
 	@media (max-width: 768px) {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -79,26 +77,23 @@ const ContactWrapper = styled.div`
 	margin: 0 auto;
 	width: 90%;
 	padding: 2em;
-	background: linear-gradient(
-		0deg,
-		rgba(27, 29, 30, 1) 0%,
-		rgba(0, 0, 0, 1) 100%
-	);
 	color: white;
 `;
 
 const ContactDiv = styled.div`
-	margin: 0 auto;
+	margin: 3em auto;
 	text-align: left;
 	color: white;
 	h2 {
 		text-decoration: underline;
 		text-underline-offset: 0.4em;
 		font-size: 3em;
+		color: #66fcf1;
 	}
 	p {
 		font-size: 1.3em;
 		padding: 1em 0;
+		color: #66fcf1;
 	}
 `;
 
@@ -135,13 +130,14 @@ const StyledContactForm = styled.div`
 		label {
 			margin-top: 1.2em;
 			padding-bottom: 0.2em;
-			color: rgb(122, 232, 122);
+			/* color: rgb(122, 232, 122); */
+			color: #66fcf1;
 		}
 		input[type='submit'] {
 			margin-top: 2em;
 			margin-bottom: 4em;
 			background: green;
-			width: 100%;
+			max-width: 100%;
 			margin: 2em auto;
 			color: white;
 			border: none;
@@ -159,9 +155,10 @@ const SpanLine = styled.span`
 	display: block;
 	align-items: center;
 	margin: 50px auto;
-	height: 320px;
-	width: 2px;
-	background-color: rgb(122, 232, 122);
+	height: 25em;
+	width: 0.2em;
+	/* background-color: rgb(122, 232, 122); */
+	background-color: #66fcf1;
 	@media (max-width: 768px) {
 		margin: 100px auto;
 		height: 150px;

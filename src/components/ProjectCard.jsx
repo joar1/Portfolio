@@ -18,7 +18,7 @@ export function ProjectCard(props) {
 }
 
 const CardContainer = styled.div`
-	margin: 0 auto;
+	margin: 8em auto;
 	width: 80%;
 	line-height: 1.5;
 	@media (max-width: 768px) {
@@ -77,8 +77,9 @@ const InfoWrapper = styled.div`
 const StyledH3 = styled.h3`
 	font-size: 2em;
 	margin-top: 0;
-	color: rgb(122, 232, 122);
-	text-shadow: green 1px 0 20px;
+	/* color: rgb(122, 232, 122); */
+	/* text-shadow: green 1px 0 20px; */
+	color: #66fcf1;
 `;
 const StyledP1 = styled.p`
 	text-align: left;

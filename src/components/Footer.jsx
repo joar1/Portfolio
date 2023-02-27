@@ -35,7 +35,7 @@ export const Footer = () => {
 
 const FooterContainer = styled.div`
 	background: black;
-	color: #fff;
+	color: #66fcf1;
 	@media (max-width: 768px) {
 		max-width: 100%;
 	}
@@ -52,7 +52,7 @@ const FooterWrapper = styled.div`
 const FooterDiv = styled.div`
 	text-align: left;
 	h4 {
-		color: rgb(122, 232, 122);
+		/* color: rgb(122, 232, 122); */
 		cursor: pointer;
 		font-size: 1.4em;
 	}
@@ -61,11 +61,12 @@ const FooterDiv = styled.div`
 const FooterSoMe = styled.div`
 	display: flex;
 	display: inline-block;
-	list-style: none;
-	color: rgb(122, 232, 122);
+	/* color: rgb(122, 232, 122); */
+	color: #66fcf1;
 	a {
-		color: rgb(122, 232, 122);
+		/* color: rgb(122, 232, 122); */
+		color: #66fcf1;
 		font-size: 2.5em;
-		margin: 0 0.2em;
+		margin-left: 0.4em;
 	}
 `;

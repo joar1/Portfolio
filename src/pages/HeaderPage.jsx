@@ -6,8 +6,8 @@ const HeaderPage = () => {
 			<PageContainer>
 				<Header>
 					<h1>
-						HALLO VERDEN, {<br />}
-						<span>JOAR</span> HER! JUNIORUTVIKLER {<br />} MED FOKUS PÅ{' '}
+						HALLO VERDEN,<span>JOAR</span> HER! {<br />}
+						<span>JUNIORUTVIKLER</span> {<br />} MED FOKUS PÅ{' '}
 						<span>FRONTEND</span>
 					</h1>
 				</Header>
@@ -23,16 +23,18 @@ const PageContainer = styled.header`
 	flex-direction: column;
 	justify-content: center;
 	max-width: 100%;
-	height: 80vh;
-	color: white;
-	text-shadow: black 0px 0px 2px;
-	background: black;
+	height: 100vh;
+	/* color: white; */
+	color: #45a29e;
+	/* background-color: #1f2833; */
+	background: #0b0c10;
+
 	h1 {
-		font-size: 2em;
+		font-size: 2.8em;
 		margin: 0 auto;
 	}
 	span {
-		color: rgb(122, 232, 122);
+		color: #66fcf1;
 		text-shadow: none;
 	}
 	@media (max-width: 768px) {

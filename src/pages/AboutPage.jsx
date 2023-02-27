@@ -19,9 +19,9 @@ const About = () => {
 						Jeg heter {<span>Joar</span>} og er en {<span>juniorutvikler</span>}{' '}
 						og tidligere
 						{<span> elektriker</span>}. På grunn av en yrkesskade måtte jeg
-						tenke nytt og da falt valget på {<span>koding</span>}, noe som har
-						blitt en ny lidenskap. I og med at jeg liker å løse problemer passer
-						programmering perfekt.{<br />}
+						tenke nytt og da falt valget på {<span>koding</span>}, noe som
+						passer perfekt siden jeg elsker å <span>løse problemer.</span>{' '}
+						{<br />}
 					</p>
 					<p>
 						Jeg går nå på et kurs som heter Kodehode, der jeg lærer
@@ -54,22 +54,19 @@ const AboutContainer = styled.div`
 	max-width: 100%;
 	margin: 0 auto;
 	padding: 5em 0;
-	background: linear-gradient(
-		0deg,
-		rgba(27, 29, 30, 1) 0%,
-		rgba(0, 0, 0, 1) 100%
-	);
-	color: white;
+	background-color: #1f2833;
+	color: #c5c6c7;
 `;
 
 const AboutMe = styled.section`
 	display: flex;
 	justify-content: space-around;
 	width: 90%;
-	margin: 1em auto;
+	margin: 0 auto;
+	padding: 4em 0;
 	line-height: 1.5em;
 	span {
-		color: #53b2cd;
+		color: #66fcf1;
 		font-weight: bolder;
 	}
 	@media (max-width: 768px) {
@@ -85,7 +82,7 @@ const AboutMe = styled.section`
 `;
 
 const PictureOfMe = styled.img`
-	margin-top: 130px;
+	margin-top: 200px;
 	height: 350px;
 	object-fit: contain;
 	box-shadow: 0px 0px 20px #fff;
@@ -100,11 +97,13 @@ const PictureOfMe = styled.img`
 
 const AboutText = styled.div`
 	width: 50%;
+	line-height: 1.4;
 	h2 {
 		padding: 1em;
 		text-decoration: underline;
 		text-underline-offset: 0.3em;
 		font-size: 2em;
+		color: #66fcf1;
 	}
 	h3 {
 		text-align: center;

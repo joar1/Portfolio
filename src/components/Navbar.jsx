@@ -36,7 +36,8 @@ const StyledNavbar = styled.nav`
 	justify-content: space-between;
 	padding: 0.5em 0;
 	background: black;
-	color: rgb(122, 232, 122);
+	/* color: rgb(122, 232, 122); */
+	color: #66fcf1;
 	font-size: 1.3em;
 	@media (max-width: 768px) {
 		font-size: 2vh;
@@ -63,10 +64,11 @@ const ListContainer = styled.div`
 const StyledA = styled.a`
 	padding: 0 2em 0 0;
 	text-decoration: none;
-	color: #f1f1f1;
+	color: #66fcf1;
 	&:hover {
-		color: rgb(122, 232, 122);
-		text-shadow: green 1px 0 10px;
+		/* color: rgb(122, 232, 122);
+		text-shadow: green 1px 0 10px; */
+		/* color: #45a29e; */
 		text-decoration: underline;
 		text-underline-offset: 0.4em;
 		text-decoration-thickness: 0.1em;
