@@ -53,7 +53,7 @@ export default About;
 const AboutContainer = styled.div`
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 5em 0;
+	padding-top: 8em;
 	background-color: #1f2833;
 	color: #c5c6c7;
 `;
@@ -63,7 +63,6 @@ const AboutMe = styled.section`
 	justify-content: space-around;
 	width: 90%;
 	margin: 0 auto;
-	padding: 4em 0;
 	line-height: 1.5em;
 	span {
 		color: #66fcf1;
@@ -121,6 +120,7 @@ const AboutText = styled.div`
 
 const LogoWrapper = styled.div`
 	text-align: center;
+	padding: 2em 0 10em 0;
 	svg {
 		margin: 0 1em;
 		color: white;
