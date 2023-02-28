@@ -79,8 +79,9 @@ const ListContainer = styled.div`
 		display: inline-block;
 	}
 `;
+
 const StyledLink = styled(Link)`
-	padding: 0 2em 0 0;
+	padding: 0 1em 0 0;
 	text-decoration: none;
 	color: #66fcf1;
 	&:hover {
@@ -92,7 +93,6 @@ const StyledLink = styled(Link)`
 `;
 
 const StyledA = styled.a`
-	padding: 0 2em 0 0;
 	text-decoration: none;
 	color: #66fcf1;
 	&:hover {

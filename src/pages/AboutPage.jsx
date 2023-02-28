@@ -75,14 +75,13 @@ const AboutMe = styled.section`
 		align-items: center;
 		flex-direction: column;
 		font-size: 2vw;
-		margin: 0 auto;
 		max-width: 100%;
 	}
 `;
 
 const PictureOfMe = styled.img`
 	margin-top: 175px;
-	height: 350px;
+	height: 300px;
 	object-fit: contain;
 	box-shadow: 0px 0px 20px #fff;
 	border-radius: 50%;
