@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import CV from '../assets/joarCv.pdf';
 import { Link } from 'react-scroll';
+import { FiDownload } from 'react-icons/fi';
 
 export const Navbar = () => {
 	return (
@@ -39,6 +40,7 @@ export const Navbar = () => {
 						<li>
 							<StyledA href={CV} download>
 								CV
+								<FiDownload />
 							</StyledA>
 						</li>
 					</ul>
@@ -93,12 +95,12 @@ const StyledLink = styled(Link)`
 `;
 
 const StyledA = styled.a`
+	display: flex;
+	align-items: center;
 	text-decoration: none;
 	color: #66fcf1;
 	&:hover {
-		text-decoration: underline;
-		text-underline-offset: 0.4em;
-		text-decoration-thickness: 0.1em;
 		cursor: pointer;
+		transform: scale(1.2);
 	}
 `;

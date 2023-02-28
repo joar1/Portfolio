@@ -9,7 +9,7 @@ export const Projects = () => {
 	return (
 		<>
 			<ProjectContainer>
-				<h2 id='Prosjekter'>Prosjekter</h2>
+				<h2 id='Prosjekter'>PROSJEKTER </h2>
 				<ProjectCard
 					img={Igrunnen}
 					title='Igrunnen'
