@@ -12,7 +12,7 @@ export const Footer = () => {
 					<h4 onClick={ScrollTop}>Hjem</h4>
 				</FooterDiv>
 				<FooterSoMe>
-					<h4>SOSIALE MEDIER</h4>
+					{/* <h4>SOSIALE MEDIER</h4> */}
 					<a
 						href='https://www.linkedin.com/in/joar-reinsnes-938577169/'
 						target='_blank'
@@ -35,6 +35,7 @@ export const Footer = () => {
 
 const FooterContainer = styled.div`
 	background: black;
+	padding: 0.5em 5em;
 	color: #66fcf1;
 	@media (max-width: 768px) {
 		max-width: 100%;
