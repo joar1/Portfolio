@@ -14,7 +14,7 @@ const HeaderPage = () => {
 								wrapper='b'
 								steps={[
 									'UTVIKLER',
-									1000,
+									1500,
 									'PAPPA',
 									1000,
 									'GITARIST',
@@ -40,9 +40,7 @@ const PageContainer = styled.header`
 	justify-content: center;
 	max-width: 100%;
 	height: 100vh;
-	/* color: white; */
 	color: #45a29e;
-	/* background-color: #1f2833; */
 	background: #0b0c10;
 	h1 {
 		font-size: 2.8em;
