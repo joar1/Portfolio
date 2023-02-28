@@ -28,7 +28,6 @@ const PageContainer = styled.header`
 	color: #45a29e;
 	/* background-color: #1f2833; */
 	background: #0b0c10;
-
 	h1 {
 		font-size: 2.8em;
 		margin: 0 auto;
@@ -47,7 +46,8 @@ const PageContainer = styled.header`
 `;
 
 const Header = styled.div`
-	margin-left: 10em;
+	margin: 0 auto;
+	width: 75%;
 	@media (max-width: 768px) {
 		display: flex;
 		justify-content: center;

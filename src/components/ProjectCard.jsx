@@ -18,8 +18,11 @@ export function ProjectCard(props) {
 }
 
 const CardContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	margin: 8em auto;
-	width: 80%;
+	width: 85%;
 	line-height: 1.5;
 	@media (max-width: 768px) {
 		max-width: 100%;
@@ -49,7 +52,7 @@ const InfoWrapper = styled.div`
 	flex-direction: column;
 	text-align: left;
 	margin: 0 0 0 4em;
-	padding: 1em;
+	padding: 2em 0.5em;
 	a {
 		margin-top: 3em;
 	}
@@ -77,8 +80,6 @@ const InfoWrapper = styled.div`
 const StyledH3 = styled.h3`
 	font-size: 2em;
 	margin-top: 0;
-	/* color: rgb(122, 232, 122); */
-	/* text-shadow: green 1px 0 20px; */
 	color: #66fcf1;
 `;
 const StyledP1 = styled.p`

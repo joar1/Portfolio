@@ -43,19 +43,13 @@ const ProjectContainer = styled.div`
 	margin: 0em auto;
 	padding: 6em 0;
 	color: white;
-	/* background: linear-gradient(
-		0deg,
-		rgba(0, 0, 0, 1) 0%,
-		rgba(27, 29, 30, 1) 100%
-	); */
+	background: #000;
 	h2 {
 		text-align: center;
 		text-decoration: underline;
 		text-underline-offset: 0.4em;
 		font-size: 4em;
 		margin-bottom: 1em;
-		/* color: rgb(122, 232, 122); */
-		/* text-shadow: green 1px 0 10px; */
 		color: #66fcf1;
 	}
 	p {

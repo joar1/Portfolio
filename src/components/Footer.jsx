@@ -35,7 +35,7 @@ export const Footer = () => {
 
 const FooterContainer = styled.div`
 	background: black;
-	padding: 0.5em 5em;
+	padding: 0.5em 5.5em;
 	color: #66fcf1;
 	@media (max-width: 768px) {
 		max-width: 100%;

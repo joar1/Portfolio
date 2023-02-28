@@ -41,7 +41,7 @@ const StyledNavbar = styled.nav`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0.5em 5em;
+	padding: 0.5em 5.5em;
 	background: black;
 	/* color: rgb(122, 232, 122); */
 	color: #66fcf1;
