@@ -6,7 +6,9 @@ export const Navbar = () => {
 	return (
 		<>
 			<StyledNavbar>
-				<StyledLogo>JR</StyledLogo>
+				<StyledLogo link='/' to='Kontakt' smooth={true} duration={1500}>
+					JR
+				</StyledLogo>
 				<ListContainer>
 					<ul>
 						<li>
@@ -61,9 +63,12 @@ const StyledNavbar = styled.nav`
 	}
 `;
 
-const StyledLogo = styled.p`
+const StyledLogo = styled(Link)`
 	padding-left: 1em;
 	font-size: 1.5em;
+	&:hover {
+		cursor: pointer;
+	}
 `;
 
 const ListContainer = styled.div`
