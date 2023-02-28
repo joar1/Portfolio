@@ -53,7 +53,7 @@ export default About;
 const AboutContainer = styled.div`
 	max-width: 100%;
 	margin: 0 auto;
-	padding-top: 8em;
+	padding-top: 4em;
 	background-color: #1f2833;
 	color: #c5c6c7;
 `;

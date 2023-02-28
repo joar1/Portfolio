@@ -1,4 +1,5 @@
 import { ProjectCard } from '../components/ProjectCard';
+import Typical from 'react-typical';
 import Igrunnen from '../images/igrunnen.png';
 import Spoonacular from '../images/spoonacular.png';
 import MockShop from '../images/mockshop.png';

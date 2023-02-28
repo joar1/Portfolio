@@ -62,7 +62,7 @@ export default ContactForm;
 
 const ContactContainer = styled.div`
 	height: 80vh;
-	padding: 5em 0;
+	padding: 8em 0 1em 0;
 	background-color: #1f2833;
 	@media (max-width: 768px) {
 		display: grid;
@@ -76,7 +76,6 @@ const ContactWrapper = styled.div`
 	display: flex;
 	margin: 0 auto;
 	width: 90%;
-	padding: 2em;
 	color: white;
 `;
 
@@ -92,7 +91,7 @@ const ContactDiv = styled.div`
 	}
 	p {
 		font-size: 1.3em;
-		padding: 1em 0;
+		padding: 0.5em 0;
 		color: #66fcf1;
 	}
 `;
@@ -129,8 +128,7 @@ const StyledContactForm = styled.div`
 		}
 		label {
 			margin-top: 1.2em;
-			padding-bottom: 0.2em;
-			/* color: rgb(122, 232, 122); */
+			padding-bottom: 0.1em;
 			color: #66fcf1;
 		}
 		input[type='submit'] {
@@ -157,7 +155,6 @@ const SpanLine = styled.span`
 	margin: 50px auto;
 	height: 25em;
 	width: 0.2em;
-	/* background-color: rgb(122, 232, 122); */
 	background-color: #66fcf1;
 	@media (max-width: 768px) {
 		margin: 100px auto;

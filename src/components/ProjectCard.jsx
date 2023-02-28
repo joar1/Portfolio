@@ -6,7 +6,7 @@ export function ProjectCard(props) {
 			<CardDiv>
 				<img src={props.img} alt='#' />
 				<InfoWrapper>
-					<StyledH3>{props.title}</StyledH3>
+					<StyledH3> {props.title}</StyledH3>
 					<StyledP1>{props.paragraph}</StyledP1>
 					<a href={props.link} target='_blank' rel='noreferrer'>
 						<button>SE LIVE VERSJON</button>
@@ -21,7 +21,7 @@ const CardContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 8em auto;
+	margin: 0 auto;
 	width: 85%;
 	line-height: 1.5;
 	@media (max-width: 768px) {
