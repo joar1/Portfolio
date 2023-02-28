@@ -12,7 +12,16 @@ const HeaderPage = () => {
 							<Typical
 								loop={Infinity}
 								wrapper='b'
-								steps={['UTVIKLER', 1000, 'PAPPA', 1000, 'GAMER', 1000]}
+								steps={[
+									'UTVIKLER',
+									1000,
+									'PAPPA',
+									1000,
+									'GITARIST',
+									1000,
+									'GAMER',
+									1000,
+								]}
 							/>
 						</span>
 						{<br />} MED FOKUS PÅ <span>FRONTEND</span>
