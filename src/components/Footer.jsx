@@ -9,10 +9,9 @@ export const Footer = () => {
 		<FooterContainer>
 			<FooterWrapper>
 				<FooterDiv>
-					<h4 onClick={ScrollTop}>Hjem</h4>
+					<h3 onClick={ScrollTop}>Hjem</h3>
 				</FooterDiv>
 				<FooterSoMe>
-					{/* <h4>SOSIALE MEDIER</h4> */}
 					<a
 						href='https://www.linkedin.com/in/joar-reinsnes-938577169/'
 						target='_blank'
@@ -52,22 +51,18 @@ const FooterWrapper = styled.div`
 
 const FooterDiv = styled.div`
 	text-align: left;
-	h4 {
-		/* color: rgb(122, 232, 122); */
-		cursor: pointer;
-		font-size: 1.4em;
-	}
 `;
 
 const FooterSoMe = styled.div`
 	display: flex;
 	display: inline-block;
-	/* color: rgb(122, 232, 122); */
 	color: #66fcf1;
 	a {
-		/* color: rgb(122, 232, 122); */
 		color: #66fcf1;
 		font-size: 2.5em;
 		margin-left: 0.4em;
+	}
+	svg:hover {
+		text-decoration: underline;
 	}
 `;

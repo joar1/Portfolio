@@ -6,23 +6,33 @@ export const Navbar = () => {
 	return (
 		<>
 			<StyledNavbar>
-				<StyledHome>JR</StyledHome>
+				<StyledLogo>JR</StyledLogo>
 				<ListContainer>
 					<ul>
 						<li>
-							<StyledA Link to='Om' smooth={true} duration={500}>
+							<StyledLink link='true' to='Om' smooth={true} duration={500}>
 								OM
-							</StyledA>
+							</StyledLink>
 						</li>
 						<li>
-							<StyledA Link to='Prosjekter' smooth={true} duration={1000}>
+							<StyledLink
+								link='true'
+								to='Prosjekter'
+								smooth={true}
+								duration={1000}
+							>
 								PROSJEKTER
-							</StyledA>
+							</StyledLink>
 						</li>
 						<li>
-							<StyledA Link to='Kontakt' smooth={true} duration={1500}>
+							<StyledLink
+								link='true'
+								to='Kontakt'
+								smooth={true}
+								duration={1500}
+							>
 								KONTAKT
-							</StyledA>
+							</StyledLink>
 						</li>
 						<li>
 							<StyledA href={CV} download>
@@ -41,9 +51,8 @@ const StyledNavbar = styled.nav`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0.5em 5.5em;
+	padding: 0.5em 8em;
 	background: black;
-	/* color: rgb(122, 232, 122); */
 	color: #66fcf1;
 	font-size: 1.3em;
 	@media (max-width: 768px) {
@@ -52,12 +61,9 @@ const StyledNavbar = styled.nav`
 	}
 `;
 
-const StyledHome = styled(Link)`
+const StyledLogo = styled.p`
 	padding-left: 1em;
 	font-size: 1.5em;
-	&:hover {
-		cursor: pointer;
-	}
 `;
 
 const ListContainer = styled.div`
@@ -68,14 +74,23 @@ const ListContainer = styled.div`
 		display: inline-block;
 	}
 `;
-const StyledA = styled(Link)`
+const StyledLink = styled(Link)`
 	padding: 0 2em 0 0;
 	text-decoration: none;
 	color: #66fcf1;
 	&:hover {
-		/* color: rgb(122, 232, 122);
-		text-shadow: green 1px 0 10px; */
-		/* color: #45a29e; */
+		text-decoration: underline;
+		text-underline-offset: 0.4em;
+		text-decoration-thickness: 0.1em;
+		cursor: pointer;
+	}
+`;
+
+const StyledA = styled.a`
+	padding: 0 2em 0 0;
+	text-decoration: none;
+	color: #66fcf1;
+	&:hover {
 		text-decoration: underline;
 		text-underline-offset: 0.4em;
 		text-decoration-thickness: 0.1em;
