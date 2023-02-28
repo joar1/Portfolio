@@ -6,7 +6,7 @@ const HeaderPage = () => {
 			<PageContainer>
 				<Header>
 					<h1>
-						HALLO VERDEN,<span>JOAR</span> HER! {<br />}
+						HALLO VERDEN, <span>JOAR</span> HER! {<br />}
 						<span>JUNIORUTVIKLER</span> {<br />} MED FOKUS PÅ{' '}
 						<span>FRONTEND</span>
 					</h1>
