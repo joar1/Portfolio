@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import CV from '../assets/joarCv.pdf';
+import { Link } from 'react-scroll';
 
 export const Navbar = () => {
 	return (
@@ -9,13 +10,19 @@ export const Navbar = () => {
 				<ListContainer>
 					<ul>
 						<li>
-							<StyledA href='#Om'>OM</StyledA>
+							<StyledA Link to='Om' smooth={true} duration={500}>
+								OM
+							</StyledA>
 						</li>
 						<li>
-							<StyledA href='#Prosjekter'>PROSJEKTER</StyledA>
+							<StyledA Link to='Prosjekter' smooth={true} duration={1000}>
+								PROSJEKTER
+							</StyledA>
 						</li>
 						<li>
-							<StyledA href='#Kontakt'>KONTAKT</StyledA>
+							<StyledA Link to='Kontakt' smooth={true} duration={1500}>
+								KONTAKT
+							</StyledA>
 						</li>
 						<li>
 							<StyledA href={CV} download>
@@ -45,7 +52,7 @@ const StyledNavbar = styled.nav`
 	}
 `;
 
-const StyledHome = styled.a`
+const StyledHome = styled(Link)`
 	padding-left: 1em;
 	font-size: 1.5em;
 	&:hover {
@@ -61,7 +68,7 @@ const ListContainer = styled.div`
 		display: inline-block;
 	}
 `;
-const StyledA = styled.a`
+const StyledA = styled(Link)`
 	padding: 0 2em 0 0;
 	text-decoration: none;
 	color: #66fcf1;
@@ -72,5 +79,6 @@ const StyledA = styled.a`
 		text-decoration: underline;
 		text-underline-offset: 0.4em;
 		text-decoration-thickness: 0.1em;
+		cursor: pointer;
 	}
 `;
