@@ -14,7 +14,7 @@ const HeaderPage = () => {
 								wrapper='b'
 								steps={[
 									'UTVIKLER',
-									1500,
+									2000,
 									'PAPPA',
 									1000,
 									'GITARIST',
@@ -48,7 +48,7 @@ const PageContainer = styled.header`
 	}
 	span {
 		color: #66fcf1;
-		text-shadow: none;
+		text-shadow: lightblue 1px 0 1px;
 	}
 	@media (max-width: 768px) {
 		display: grid;
