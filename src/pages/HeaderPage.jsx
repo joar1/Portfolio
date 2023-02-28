@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Typical from 'react-typical';
 
 const HeaderPage = () => {
 	return (
@@ -7,8 +8,14 @@ const HeaderPage = () => {
 				<Header>
 					<h1>
 						HALLO VERDEN, <span>JOAR</span> HER! {<br />}
-						<span>JUNIORUTVIKLER</span> {<br />} MED FOKUS PÅ{' '}
-						<span>FRONTEND</span>
+						<span>
+							<Typical
+								loop={Infinity}
+								wrapper='b'
+								steps={['JUNIORUTVIKLER', 1000, 'PAPPA', 1000, 'GAMER', 1000]}
+							/>
+						</span>
+						{<br />} MED FOKUS PÅ <span>FRONTEND</span>
 					</h1>
 				</Header>
 			</PageContainer>
