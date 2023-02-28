@@ -51,6 +51,13 @@ const FooterWrapper = styled.div`
 
 const FooterDiv = styled.div`
 	text-align: left;
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.2);
+		text-decoration: underline;
+		text-underline-offset: 0.4em;
+		text-decoration-thickness: 0.1em;
+	}
 `;
 
 const FooterSoMe = styled.div`
@@ -63,6 +70,6 @@ const FooterSoMe = styled.div`
 		margin-left: 0.4em;
 	}
 	svg:hover {
-		text-decoration: underline;
+		transform: scale(1.2);
 	}
 `;
