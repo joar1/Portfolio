@@ -81,7 +81,7 @@ const AboutMe = styled.section`
 `;
 
 const PictureOfMe = styled.img`
-	margin-top: 200px;
+	margin-top: 175px;
 	height: 350px;
 	object-fit: contain;
 	box-shadow: 0px 0px 20px #fff;
