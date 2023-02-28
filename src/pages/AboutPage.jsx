@@ -28,7 +28,7 @@ const About = () => {
 						Frontend-utvikling og jeg har fått god kontroll på{' '}
 						<span style={{ color: '#E24B24' }}>{<b>HTML</b>}</span>,{' '}
 						<span style={{ color: '#1B73B9' }}>{<b>CSS</b>}</span>,{' '}
-						<span style={{ color: '#D4B830' }}>{<b>Javascript</b>}</span> og{' '}
+						<span style={{ color: '#D4B830' }}>{<b>JavaScript</b>}</span> og{' '}
 						<span style={{ color: '#53B2CD' }}>{<b>React</b>}</span>. Når det
 						kommer til hobbyer går det i alt fra gaming, gitar og å google
 						"hvordan sentrere en div".
