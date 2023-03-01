@@ -43,7 +43,6 @@ const PageContainer = styled.header`
 	color: #45a29e;
 	background: #0b0c10;
 	h1 {
-		font-size: 2.8em;
 		margin: 0 auto;
 	}
 	span {

@@ -32,7 +32,7 @@ const CardContainer = styled.div`
 const CardDiv = styled.div`
 	display: flex;
 	align-items: center;
-	justify-content: right;
+	justify-content: space-around;
 	padding: 1em;
 	margin: 3em auto;
 	img {

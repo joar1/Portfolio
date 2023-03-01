@@ -64,6 +64,7 @@ const AboutMe = styled.section`
 	width: 90%;
 	margin: 0 auto;
 	line-height: 1.5em;
+
 	span {
 		color: #66fcf1;
 		font-weight: bolder;
@@ -80,7 +81,7 @@ const AboutMe = styled.section`
 `;
 
 const PictureOfMe = styled.img`
-	margin-top: 175px;
+	margin-top: 100px;
 	height: 300px;
 	object-fit: contain;
 	box-shadow: 0px 0px 20px #fff;
@@ -100,15 +101,10 @@ const AboutText = styled.div`
 		padding: 1em;
 		text-decoration: underline;
 		text-underline-offset: 0.3em;
-		font-size: 2em;
 		color: #66fcf1;
-	}
-	h3 {
-		text-align: center;
 	}
 	p {
 		padding: 1em;
-		font-size: 1.3em;
 	}
 	@media (max-width: 768px) {
 		text-decoration: none;
