@@ -1,10 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
+import Modal from './Modal';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 
 const ContactForm = () => {
 	const form = useRef();
+	const [openModal, setOpenModal] = useState(false);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -25,6 +27,7 @@ const ContactForm = () => {
 				}
 			);
 		e.target.reset();
+		setOpenModal(true);
 	};
 
 	return (
@@ -51,6 +54,7 @@ const ContactForm = () => {
 						<label>Melding</label>
 						<textarea name='message' />
 						<input type='submit' value='Send' required />
+						{openModal && <Modal closeModal={setOpenModal} />}
 					</form>
 				</StyledContactForm>
 			</ContactWrapper>
