@@ -55,6 +55,7 @@ const PageContainer = styled.header`
 		font-size: 1vh;
 		margin: 0 auto;
 		max-width: 100%;
+		height: 40vh;
 	}
 `;
 

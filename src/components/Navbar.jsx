@@ -37,14 +37,12 @@ export const Navbar = () => {
 								KONTAKT
 							</StyledLink>
 						</li>
-						<li>
-							<StyledA href={CV} download>
-								CV
-								<FiDownload />
-							</StyledA>
-						</li>
 					</ul>
 				</ListContainer>
+				<StyledA href={CV} download>
+					CV
+					<FiDownload />
+				</StyledA>
 			</StyledNavbar>
 		</>
 	);
@@ -55,7 +53,7 @@ const StyledNavbar = styled.nav`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0.5em 8em;
+	padding: 0.5em 2em;
 	background: black;
 	color: #66fcf1;
 	font-size: 1.3em;
@@ -71,6 +69,9 @@ const StyledLogo = styled(Link)`
 	&:hover {
 		cursor: pointer;
 	}
+	@media (max-width: 768px) {
+		padding-right: 10px;
+	}
 `;
 
 const ListContainer = styled.div`
@@ -79,6 +80,10 @@ const ListContainer = styled.div`
 	li {
 		list-style: none;
 		display: inline-block;
+	}
+	@media (max-width: 768px) {
+		font-size: 2vh;
+		max-width: 100%;
 	}
 `;
 
@@ -99,6 +104,7 @@ const StyledA = styled.a`
 	align-items: center;
 	text-decoration: none;
 	color: #66fcf1;
+	padding-left: 10px;
 	&:hover {
 		cursor: pointer;
 		transform: scale(1.2);

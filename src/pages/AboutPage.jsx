@@ -64,7 +64,6 @@ const AboutMe = styled.section`
 	width: 90%;
 	margin: 0 auto;
 	line-height: 1.5em;
-
 	span {
 		color: #66fcf1;
 		font-weight: bolder;
@@ -75,7 +74,7 @@ const AboutMe = styled.section`
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		font-size: 2vw;
+		font-size: 3vw;
 		max-width: 100%;
 	}
 `;
@@ -91,6 +90,7 @@ const PictureOfMe = styled.img`
 		max-width: 100%;
 		height: 20%;
 		width: 30%;
+		margin-top: 0;
 	}
 `;
 
@@ -110,6 +110,7 @@ const AboutText = styled.div`
 		text-decoration: none;
 		font-size: 1em;
 		max-width: 100%;
+		width: 90%;
 	}
 `;
 

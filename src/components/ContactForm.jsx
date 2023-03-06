@@ -73,6 +73,7 @@ const ContactContainer = styled.div`
 		grid-template-columns: 1fr;
 		font-size: 2vw;
 		max-width: 100%;
+		height: 55vh;
 	}
 `;
 
