@@ -34,8 +34,8 @@ export const Footer = () => {
 
 const FooterContainer = styled.div`
 	background: black;
-	padding: 0.5em 5.5em;
-	color: #66fcf1;
+	padding: 0.5em 2em;
+	color: white;
 	@media (max-width: 768px) {
 		max-width: 100%;
 	}
@@ -51,25 +51,23 @@ const FooterWrapper = styled.div`
 
 const FooterDiv = styled.div`
 	text-align: left;
+	font-size: 1.5em;
 	&:hover {
 		cursor: pointer;
 		transform: scale(1.2);
-		text-decoration: underline;
-		text-underline-offset: 0.4em;
-		text-decoration-thickness: 0.1em;
+		color: #66fcf1;
 	}
 `;
 
 const FooterSoMe = styled.div`
 	display: flex;
 	display: inline-block;
-	color: #66fcf1;
 	a {
-		color: #66fcf1;
+		color: white;
 		font-size: 2.5em;
 		margin-left: 0.4em;
 	}
 	svg:hover {
-		transform: scale(1.2);
+		transform: scale(1.5);
 	}
 `;

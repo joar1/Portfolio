@@ -12,31 +12,33 @@ export const Navbar = () => {
 				</StyledLogo>
 				<ListContainer>
 					<ul>
-						<li>
-							<StyledLink link='true' to='Om' smooth={true} duration={500}>
-								OM
-							</StyledLink>
-						</li>
-						<li>
-							<StyledLink
-								link='true'
-								to='Prosjekter'
-								smooth={true}
-								duration={1000}
-							>
-								PROSJEKTER
-							</StyledLink>
-						</li>
-						<li>
-							<StyledLink
-								link='true'
-								to='Kontakt'
-								smooth={true}
-								duration={1500}
-							>
-								KONTAKT
-							</StyledLink>
-						</li>
+						<div>
+							<li>
+								<StyledLink link='true' to='Om' smooth={true} duration={500}>
+									OM
+								</StyledLink>
+							</li>
+							<li>
+								<StyledLink
+									link='true'
+									to='Prosjekter'
+									smooth={true}
+									duration={1000}
+								>
+									PROSJEKTER
+								</StyledLink>
+							</li>
+							<li>
+								<StyledLink
+									link='true'
+									to='Kontakt'
+									smooth={true}
+									duration={1500}
+								>
+									KONTAKT
+								</StyledLink>
+							</li>
+						</div>
 					</ul>
 				</ListContainer>
 				<StyledA href={CV} download>
@@ -55,7 +57,7 @@ const StyledNavbar = styled.nav`
 	justify-content: space-between;
 	padding: 0.5em 2em;
 	background: black;
-	color: #66fcf1;
+	color: white;
 	font-size: 1.3em;
 	@media (max-width: 768px) {
 		font-size: 2vh;
@@ -68,6 +70,8 @@ const StyledLogo = styled(Link)`
 	font-size: 1.5em;
 	&:hover {
 		cursor: pointer;
+		transform: scale(1.2);
+		color: #66fcf1;
 	}
 	@media (max-width: 768px) {
 		padding-right: 10px;
@@ -75,8 +79,6 @@ const StyledLogo = styled(Link)`
 `;
 
 const ListContainer = styled.div`
-	display: flex;
-	align-items: center;
 	li {
 		list-style: none;
 		display: inline-block;
@@ -89,12 +91,11 @@ const ListContainer = styled.div`
 
 const StyledLink = styled(Link)`
 	padding: 0 1em 0 0;
-	text-decoration: none;
-	color: #66fcf1;
+	color: white;
+	font-size: 1.5em;
 	&:hover {
-		text-decoration: underline;
-		text-underline-offset: 0.4em;
-		text-decoration-thickness: 0.1em;
+		font-size: 1.6em;
+		color: #66fcf1;
 		cursor: pointer;
 	}
 `;
@@ -102,11 +103,13 @@ const StyledLink = styled(Link)`
 const StyledA = styled.a`
 	display: flex;
 	align-items: center;
+	font-size: 1.5em;
 	text-decoration: none;
-	color: #66fcf1;
+	color: white;
 	padding-left: 10px;
 	&:hover {
 		cursor: pointer;
 		transform: scale(1.2);
+		color: #66fcf1;
 	}
 `;

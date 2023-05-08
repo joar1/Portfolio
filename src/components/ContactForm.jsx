@@ -67,7 +67,12 @@ export default ContactForm;
 const ContactContainer = styled.div`
 	height: 80vh;
 	padding: 8em 0 1em 0;
-	background-color: #1f2833;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(31, 40, 51, 1) 75%
+	);
 	@media (max-width: 768px) {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -92,11 +97,12 @@ const ContactDiv = styled.div`
 		text-underline-offset: 0.4em;
 		font-size: 3em;
 		color: #66fcf1;
+		text-shadow: lightblue 1px 0 2px;
 	}
 	p {
 		font-size: 1.3em;
 		padding: 0.5em 0;
-		color: #66fcf1;
+		color: white;
 	}
 `;
 
@@ -133,7 +139,7 @@ const StyledContactForm = styled.div`
 		label {
 			margin-top: 1.2em;
 			padding-bottom: 0.1em;
-			color: #66fcf1;
+			color: white;
 		}
 		input[type='submit'] {
 			margin-top: 2em;

@@ -41,9 +41,14 @@ export const Projects = () => {
 
 const ProjectContainer = styled.div`
 	margin: 0em auto;
-	padding: 6em 0;
-	color: white;
-	background: #000;
+	padding: 3em 0;
+	background: rgb(31, 40, 51);
+	background: linear-gradient(
+		0deg,
+		rgba(31, 40, 51, 1) 0%,
+		rgba(0, 0, 0, 1) 50%,
+		rgba(31, 40, 51, 1) 75%
+	);
 	h2 {
 		text-align: center;
 		text-decoration: underline;
@@ -51,9 +56,11 @@ const ProjectContainer = styled.div`
 		font-size: 4em;
 		margin-bottom: 1em;
 		color: #66fcf1;
+		text-shadow: lightblue 1px 0 2px;
 	}
 	p {
 		font-size: 1.3em;
+		color: white;
 	}
 	@media (max-width: 768px) {
 		display: grid;

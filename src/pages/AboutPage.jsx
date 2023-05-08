@@ -24,7 +24,7 @@ const About = () => {
 						{<br />}
 					</p>
 					<p>
-						Jeg går nå på et kurs som heter Kodehode, der jeg lærer
+						Jeg har gått på et kurs som heter Kodehode, der jeg lærte
 						Frontend-utvikling og jeg har fått god kontroll på{' '}
 						<span style={{ color: '#E24B24' }}>{<b>HTML</b>}</span>,{' '}
 						<span style={{ color: '#1B73B9' }}>{<b>CSS</b>}</span>,{' '}
@@ -53,9 +53,10 @@ export default About;
 const AboutContainer = styled.div`
 	max-width: 100%;
 	margin: 0 auto;
-	padding-top: 4em;
+	padding-top: 2em;
 	background-color: #1f2833;
-	color: #c5c6c7;
+	/* color: #c5c6c7; */
+	color: white;
 `;
 
 const AboutMe = styled.section`
@@ -98,10 +99,12 @@ const AboutText = styled.div`
 	width: 50%;
 	line-height: 1.4;
 	h2 {
-		padding: 1em;
+		padding-left: 0.6em;
+		font-size: 1.5em;
 		text-decoration: underline;
 		text-underline-offset: 0.3em;
 		color: #66fcf1;
+		text-shadow: lightblue 1px 0 2px;
 	}
 	p {
 		padding: 1em;
