@@ -98,6 +98,10 @@ const StyledLink = styled(Link)`
 		color: #66fcf1;
 		cursor: pointer;
 	}
+	@media (max-width: 768px) {
+		font-size: 2.2vh;
+		max-width: 100%;
+	}
 `;
 
 const StyledA = styled.a`
