@@ -51,8 +51,6 @@ const ProjectContainer = styled.div`
 	);
 	h2 {
 		text-align: center;
-		text-decoration: underline;
-		text-underline-offset: 0.4em;
 		font-size: 4em;
 		margin-bottom: 1em;
 		color: #66fcf1;

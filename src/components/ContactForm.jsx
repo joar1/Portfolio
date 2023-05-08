@@ -93,8 +93,6 @@ const ContactDiv = styled.div`
 	text-align: left;
 	color: white;
 	h2 {
-		text-decoration: underline;
-		text-underline-offset: 0.4em;
 		font-size: 3em;
 		color: #66fcf1;
 		text-shadow: lightblue 1px 0 2px;

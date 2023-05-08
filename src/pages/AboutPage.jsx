@@ -101,8 +101,6 @@ const AboutText = styled.div`
 	h2 {
 		padding-left: 0.6em;
 		font-size: 1.5em;
-		text-decoration: underline;
-		text-underline-offset: 0.3em;
 		color: #66fcf1;
 		text-shadow: lightblue 1px 0 2px;
 	}
