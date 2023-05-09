@@ -79,9 +79,6 @@ const ListContainer = styled.div`
 		list-style: none;
 		display: inline-block;
 	}
-	@media (max-width: 768px) {
-		max-width: 100%;
-	}
 `;
 
 const StyledLink = styled(Link)`
@@ -94,7 +91,7 @@ const StyledLink = styled(Link)`
 		cursor: pointer;
 	}
 	@media (max-width: 768px) {
-		font-size: 0.8em;
+		font-size: 1em;
 		max-width: 100%;
 		&:hover {
 			font-size: 1.1em;
