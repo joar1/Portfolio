@@ -94,7 +94,7 @@ const StyledLink = styled(Link)`
 		cursor: pointer;
 	}
 	@media (max-width: 768px) {
-		font-size: 2vh;
+		font-size: 0.8em;
 		max-width: 100%;
 		&:hover {
 			font-size: 1.1em;
