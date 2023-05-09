@@ -66,15 +66,11 @@ const StyledNavbar = styled.nav`
 `;
 
 const StyledLogo = styled(Link)`
-	padding-left: 1em;
 	font-size: 1.5em;
 	&:hover {
 		cursor: pointer;
 		transform: scale(1.2);
 		color: #66fcf1;
-	}
-	@media (max-width: 768px) {
-		padding-right: 10px;
 	}
 `;
 
@@ -84,7 +80,6 @@ const ListContainer = styled.div`
 		display: inline-block;
 	}
 	@media (max-width: 768px) {
-		font-size: 2vh;
 		max-width: 100%;
 	}
 `;
@@ -113,7 +108,6 @@ const StyledA = styled.a`
 	font-size: 1.5em;
 	text-decoration: none;
 	color: white;
-	padding-left: 10px;
 	&:hover {
 		cursor: pointer;
 		transform: scale(1.2);
