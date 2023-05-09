@@ -90,7 +90,7 @@ const ListContainer = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-	padding: 0 1em 0 0;
+	padding: 0 0.5em;
 	color: white;
 	font-size: 1.5em;
 	&:hover {
@@ -99,8 +99,11 @@ const StyledLink = styled(Link)`
 		cursor: pointer;
 	}
 	@media (max-width: 768px) {
-		font-size: 2.2vh;
+		font-size: 2vh;
 		max-width: 100%;
+		&:hover {
+			font-size: 1.1em;
+		}
 	}
 `;
 
